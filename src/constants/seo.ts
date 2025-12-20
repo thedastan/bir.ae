@@ -1,9 +1,8 @@
-// Имя пректа 
-export const SITE_NAME = 'Asim_project'
+// Имя пректа
+export const SITE_NAME = "Bir";
 
 // Описание проекта
-export const SITE_DESCRIPTION = 'Asim_project'  
+export const SITE_DESCRIPTION = "Bir";
 
 // KEY_WORDS проекта
-export const SEO_KEY_WORDS = 'Asim_project'
- 
+export const SEO_KEY_WORDS = "Bir";

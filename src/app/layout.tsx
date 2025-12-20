@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     images: [
       {
-        url: "/asim.png",
+        url: "/bir.png",
         alt: SITE_NAME,
       },
     ],
