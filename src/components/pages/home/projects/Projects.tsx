@@ -4,8 +4,8 @@ import { Description } from "@/components/ui/text/Description";
 import { TitleComponent } from "@/components/ui/text/TitleComponent";
 import React, { useState } from "react";
 import logo from "@/assets/images/logo_project4.png";
-import logo2 from "@/assets/images/logo_project2.png";
-import logo3 from "@/assets/images/logo_project8.png";
+import logo2 from "@/assets/images/logo_project9.png";
+import logo3 from "@/assets/images/logo_project1.png";
 import logo4 from "@/assets/images/logo_project2.png";
 import Image from "next/image";
 import Button from "@/components/ui/button/Button";
@@ -89,7 +89,7 @@ const Projects = () => {
                 backgroundRepeat: "no-repeat",
               }}
             >
-              <div className="w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100">
+              <div className="w-full h-full transition-opacity duration-500  md:opacity-0 group-hover:opacity-100">
                 <Image
                   className="w-full h-full object-cover"
                   src={el.img}
@@ -99,7 +99,11 @@ const Projects = () => {
 
               <div className="flex flex-col justify-between w-full h-full absolute md:p-[30px] p-[20px]">
                 <div className="flex justify-between items-center mb-4">
-                  <Image src={el.logo} alt="logo" width={80} height={80} />
+                  <Image
+                    className="w-[148px] h-[54px]"
+                    src={el.logo}
+                    alt="logo"
+                  />
 
                   <Button
                     className="
@@ -116,7 +120,7 @@ const Projects = () => {
                   <Title className="text-white !text-[24px] font-[600]">
                     {el.title}
                   </Title>
-                  <Description className="text-white !text-[16px] w-[460px] mt-3">
+                  <Description className="text-white !text-[16px] md:w-[460px] w-full mt-3">
                     {el.description}
                   </Description>
                 </div>
