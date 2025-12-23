@@ -15,7 +15,10 @@ const About = () => {
   return (
     <section className="bg-[#101010] py-[100px]">
       <div className="container">
-        <div className="w-full flex flex-col items-center gap-5">
+        <div
+          className="w-full flex flex-col items-center gap-5"
+          data-aos="fade-up"
+        >
           <TitleComponent className="!text-[44px] md:!text-[64px] text-[#FFFFFF] text-center font-light">
             {t("title")}
           </TitleComponent>
@@ -23,7 +26,10 @@ const About = () => {
             {t("description")}
           </Description>
         </div>
-        <div className="flex flex-col items-center justify-center md:justify-between relative overflow-hidden h-[550px] mt-10 rounded-[12px] bg-black border-[0.1px] border-[#313131]">
+        <div
+          data-aos="fade-up"
+          className="flex flex-col items-center justify-center md:justify-between relative overflow-hidden h-[550px] mt-10 rounded-[12px] bg-black border-[0.1px] border-[#313131]"
+        >
           <div className="w-full h-full flex flex-col items-center justify-between absolute md:p-[50px] p-[10px]">
             <div className="flex flex-col md:flex-row h-[50%] md:h-0 justify-between items-center w-full">
               <div className="w-[81px] h-[44px] hidden md:flex"></div>

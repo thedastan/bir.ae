@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Hero from "./hero/Hero";
 import Whatwedo from "./what_we_do/Whatwedo";
@@ -9,7 +10,17 @@ import Map from "./map/Map";
 import Sliderprojects from "./slider_projects/Sliderprojects";
 import Impact from "./impact/Impact";
 
+import "aos/dist/aos.css";
+import Aos from "aos";
+
 const HomeComponents = () => {
+  React.useEffect(() => {
+    Aos.init({
+      duration: 800,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <>
       <Hero />

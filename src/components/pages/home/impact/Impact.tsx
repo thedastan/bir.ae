@@ -20,8 +20,14 @@ const Impact = () => {
               {t("title")}
             </TitleComponent>
 
-            <div className="flex h-full flex-col md:flex-row gap-3 justify-center">
-              <div className="flex flex-col items-center justify-center w-full max-w-[450px] h-[258px] bg-[#101010] rounded-[12px] p-6 md:hover:translate-y-14 hover:none hover hover:border-[0.1px] border-[#313131] transition-transform duration-700">
+            <div
+              data-aos="fade-up"
+              className="flex h-full flex-col md:flex-row gap-3 justify-center"
+            >
+              <div
+                data-aos="fade-up"
+                className="flex flex-col items-center justify-center w-full max-w-[450px] h-[258px] bg-[#101010] rounded-[12px] p-6 md:hover:translate-y-14 hover:none hover hover:border-[0.1px] border-[#313131] transition-transform duration-700"
+              >
                 <Title className="text-[#FFFFFF] !text-[64px] font-light mb-2">
                   50+
                 </Title>

@@ -74,7 +74,7 @@ const Sliderprojects = () => {
 
         {/* Основной контент — в потоке, поверх фона */}
         <div className="flex md:flex-row flex-col justify-between relative z-10">
-          <div className="md:w-[800px] w-full">
+          <div data-aos="fade-up" className="md:w-[800px] w-full">
             <Image src={bracket} alt="Quote bracket" />
 
             <Swiper
@@ -130,7 +130,10 @@ const Sliderprojects = () => {
           </div>
 
           {/* Правая колонка — видео */}
-          <div className="flex md:w-[322px] w-full md:h-auto h-[575px] md:mt-0 mt-[60px] justify-center items-center rounded-[12px] bg-[#101010] border border-[#313131]">
+          <div
+            data-aos="fade-up"
+            className="flex md:w-[322px] w-full md:h-auto h-[575px] md:mt-0 mt-[60px] justify-center items-center rounded-[12px] bg-[#101010] border border-[#313131]"
+          >
             <Button className="!bg-[#2D2D2D] text-white !w-[81px] h-[44px] !rounded-[20px]">
               {t("video")}
             </Button>

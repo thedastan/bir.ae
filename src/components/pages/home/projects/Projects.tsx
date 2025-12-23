@@ -77,6 +77,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-1 mt-[30px]">
           {displayedData.map((el, index) => (
             <div
+              data-aos="fade-up"
               key={`${el.title}-${index}`} // уникальный ключ
               className="group flex h-[339px] relative overflow-hidden border-[0.1px] border-[#313131] rounded-[12px]"
               style={{
@@ -97,7 +98,7 @@ const Projects = () => {
               <div className="flex flex-col justify-between w-full h-full absolute md:p-[30px] p-[20px]">
                 <div className="flex justify-between items-center mb-4">
                   <Image
-                    className="w-[148px] h-[54px]"
+                    className="w-[118px] md:w-[148px]"
                     src={el.logo}
                     alt="logo"
                   />
@@ -105,7 +106,7 @@ const Projects = () => {
                   <Button
                     className="
                       !bg-[#2D2D2D] text-white 
-                      !w-[145px] h-[44px] !rounded-[20px]
+                      !w-[150px] md:!w-[145px] h-[44px] !rounded-[20px]
                       group-hover:!bg-white group-hover:text-black
                       transition-colors duration-300
                     "

@@ -63,6 +63,7 @@ const Whatwedo = () => {
         <div className="flex md:hidden flex-col">
           {data.map((el, index) => (
             <div
+              data-aos="fade-up"
               key={index}
               className="w-full border-b py-14 border-[#FFFFFF30] flex flex-col gap-3  "
             >
