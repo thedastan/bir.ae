@@ -22,19 +22,23 @@ const About = () => {
           </Description>
         </div>
         <div className="flex flex-col items-center justify-center md:justify-between relative overflow-hidden h-[550px] mt-10 rounded-[12px] bg-black border-[0.1px] border-[#313131]">
-          <div className="w-full h-full flex flex-col items-center justify-between absolute p-[50px]">
+          <div className="w-full h-full flex flex-col items-center justify-between absolute md:p-[50px] p-[10px]">
             <div className="flex flex-col md:flex-row h-[50%] md:h-0 justify-between items-center w-full">
               <div className="w-[81px] h-[44px] hidden md:flex"></div>
-              <Image className="" src={logo} alt="img" />
+              <Image
+                className="w-[89px] mt-[40px] md:mt-auto"
+                src={logo}
+                alt="img"
+              />
               <Button className="!bg-[#2D2D2D] text-white !w-[81px] h-[44px] !rounded-[20px]">
                 Video
               </Button>
             </div>
-            <div className="flex gap-5 flex-col md:flex-row justify-center md:w-[75%] w-full border-t-[0.1px] border-[#5e5e5e]">
-              <Title className="text-white text-[20px] font-[100] md:w-[400px] w-full text-center">
+            <div className="flex gap-5 flex-col md:flex-row justify-center md:w-[75%] w-full py-[10px] border-t-[0.1px] border-[#acacac]">
+              <Title className="text-white md:text-[20px] text-[18px] font-[100] md:w-[400px] w-full text-center">
                 Our approach combines aesthetics, technology, and strategy.
               </Title>
-              <Title className="text-white text-[20px] font-[100]  md:w-[400px] w-full text-center">
+              <Title className="text-white md:text-[20px] text-[18px] font-[100] md:w-[400px] w-full text-center">
                 Operations in UAE, Switzerland, USA, Kyrgyzstan & more.
               </Title>
             </div>
