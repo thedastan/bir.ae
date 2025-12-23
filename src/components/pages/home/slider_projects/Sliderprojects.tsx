@@ -94,7 +94,7 @@ const Sliderprojects = () => {
               {data.map((el, index) => (
                 <SwiperSlide key={index}>
                   <div>
-                    <div className="flex justify-between items-center mt-[60px] gap-2">
+                    <div className="flex justify-between md:justify-start items-center mt-[60px] gap-2">
                       <Image className="" src={el.img} alt="Avatar" />
                       <div className="flex flex-col items-end md:w-[200px] w-[180px]">
                         <Title className="!text-[24px]   text-end text-white">

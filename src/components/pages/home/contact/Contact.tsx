@@ -32,27 +32,21 @@ const Contact = () => {
         </TitleComponent>
         <div className="flex flex-col gap-[20px]">
           <input
-            data-aos="fade-up"
             className="border-[0.1px] border-[#313131] w-[300px] h-[64px] rounded-[40px] bg-[#000000] p-[15px] text-white outline-none text-[16px]"
             type="text"
             placeholder={t("name")}
           />
           <input
-            data-aos="fade-up"
             className="border-[0.1px] border-[#313131] w-[300px] h-[64px] rounded-[40px] bg-[#000000] p-[15px] text-white outline-none text-[16px]"
             type="number"
             placeholder={t("phone")}
           />
           <textarea
-            data-aos="fade-up"
             className="w-[300px] h-[80px] bg-black rounded-[24px] outline-none p-[15px] text-white border-[0.1px] border-[#313131]"
             placeholder={t("message")}
           ></textarea>
 
-          <button
-            data-aos="fade-up"
-            className="bg-white !text-black w-[300px] h-[44px] !rounded-[40px]"
-          >
+          <button className="bg-white !text-black w-[300px] h-[44px] !rounded-[40px]">
             {t("send")}
           </button>
         </div>

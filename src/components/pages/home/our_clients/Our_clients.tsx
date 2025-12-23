@@ -48,7 +48,6 @@ const Ourclients = () => {
                     <div className="grid grid-cols-2 gap-6">
                       {rowLogos.map((el, colIndex) => (
                         <div
-                          data-aos="fade-up"
                           key={`mobile-${startIdx + colIndex}`}
                           className="flex justify-center items-center"
                         >
@@ -60,10 +59,7 @@ const Ourclients = () => {
                       ))}
                     </div>
                     {rowIndex < 3 && (
-                      <div
-                        data-aos="fade-up"
-                        className="w-full h-[1px] bg-[#6d6d6d7a] my-4"
-                      ></div>
+                      <div className="w-full h-[1px] bg-[#6d6d6d7a] my-4"></div>
                     )}
                   </React.Fragment>
                 );
@@ -73,16 +69,12 @@ const Ourclients = () => {
           {/* Десктопная версия — сетка 4x2 с линиями */}
           <div className="mt-[60px] w-[85%] relative hidden md:block">
             {/* Горизонтальная линия по центру */}
-            <div
-              data-aos="fade-up"
-              className="absolute top-1/2 left-0 right-0 h-[1px] bg-[#6d6d6d7a] z-0"
-            ></div>
+            <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-[#6d6d6d7a] z-0"></div>
 
             {/* Сетка для логотипов */}
             <div className="grid grid-cols-4 gap-6 relative z-10">
               {data.map((el, index) => (
                 <div
-                  data-aos="fade-up"
                   key={`top-${index}`}
                   className="flex justify-end items-center"
                 >
@@ -94,7 +86,6 @@ const Ourclients = () => {
             <div className="grid grid-cols-4 gap-6 relative z-10 mt-6">
               {data2.map((el, index) => (
                 <div
-                  data-aos="fade-up"
                   key={`bottom-${index}`}
                   className="flex justify-start items-center"
                 >
@@ -106,7 +97,6 @@ const Ourclients = () => {
             {/* Вертикальные линии между колонками */}
             {[1, 2, 3].map((colIndex) => (
               <div
-                data-aos="fade-up"
                 key={`vline-${colIndex}`}
                 className="absolute top-0 bottom-0 w-[1px] bg-[#6d6d6d7a] z-0"
                 style={{

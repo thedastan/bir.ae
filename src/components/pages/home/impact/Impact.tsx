@@ -11,12 +11,12 @@ const Impact = () => {
   //  {t("title")}
 
   return (
-    <section className="py-[100px] bg-black">
+    <section className="py-[0px] md:py-[100px] bg-black">
       <div className="container">
         <div className="relative flex justify-center h-[120vh] md:h-full">
           <Image src={lattice} alt="img" />
           <div className="w-full h-full absolute z-20">
-            <TitleComponent className="!text-[44px] md:!text-[64px] text-[#FFFFFF] text-center font-light md:mb-12">
+            <TitleComponent className="!text-[44px] md:!text-[64px] mt-[100px] md:mt-[0px] text-[#FFFFFF] text-center font-light md:mb-12">
               {t("title")}
             </TitleComponent>
 
@@ -24,10 +24,7 @@ const Impact = () => {
               data-aos="fade-up"
               className="flex h-full flex-col md:flex-row gap-3 justify-center"
             >
-              <div
-                data-aos="fade-up"
-                className="flex flex-col items-center justify-center w-full max-w-[450px] h-[258px] bg-[#101010] rounded-[12px] p-6 md:hover:translate-y-14 hover:none hover hover:border-[0.1px] border-[#313131] transition-transform duration-700"
-              >
+              <div className="flex flex-col items-center justify-center w-full max-w-[450px] h-[258px] bg-[#101010] rounded-[12px] p-6 md:hover:translate-y-14 hover:none hover hover:border-[0.1px] border-[#313131] transition-transform duration-700">
                 <Title className="text-[#FFFFFF] !text-[64px] font-light mb-2">
                   50+
                 </Title>
