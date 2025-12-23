@@ -67,3 +67,16 @@ body {
 .font-mono {
   font-family: var(--font-geist-mono), monospace;
 }
+
+/* Стили для точек пагинации */
+.swiper-pagination-bullet {
+  background-color: #adadad !important; /* серый цвет */
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important; /* активная — твой акцентный цвет */
+  opacity: 1;
+  width: 16px; /* опционально: сделать активную точку шире */
+}
