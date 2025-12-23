@@ -9,6 +9,7 @@ import logo_project5 from "@/assets/images/logo_project5.png";
 import logo_project6 from "@/assets/images/logo_project6.png";
 import logo_project7 from "@/assets/images/logo_project7.png";
 import logo_project8 from "@/assets/images/logo_project8.png";
+import { useTranslations } from "next-intl";
 
 const data = [
   { img: logo_project1 },
@@ -25,11 +26,13 @@ const data2 = [
 ];
 
 const Ourclients = () => {
+  const t = useTranslations("Our_Clients");
+  //  {t("title")}
   return (
     <section className="bg-[#101010] py-[50px]">
       <div className="container">
         <div className="flex flex-col items-center">
-          <TitleComponent className="text-white">Our Clients</TitleComponent>
+          <TitleComponent className="text-white">{t("title")}</TitleComponent>
 
           {/* Мобильная версия — 2 в строке + линии между строками */}
           <div className="mt-[60px] w-[85%] relative md:hidden">

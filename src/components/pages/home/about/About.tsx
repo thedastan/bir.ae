@@ -7,18 +7,20 @@ import Image from "next/image";
 import { Title } from "@/components/ui/text/Title";
 // import light from "@/assets/images/light.png";
 import light from "@/assets/images/light2.png";
+import { useTranslations } from "next-intl";
 
 const About = () => {
+  const t = useTranslations("About");
+  //  {t("title")}
   return (
     <section className="bg-[#101010] py-[100px]">
       <div className="container">
         <div className="w-full flex flex-col items-center gap-5">
           <TitleComponent className="!text-[44px] md:!text-[64px] text-[#FFFFFF] text-center font-light">
-            About Our Studio
+            {t("title")}
           </TitleComponent>
-          <Description className="!text-[32px] md:!text-[44px] text-[#FFFFFF] text-center font-light md:w-[740px] w-full">
-            We are a digital studio specializing in web and mobile development,
-            UX/UI design, and digital marketing.
+          <Description className="!text-[28px] md:!text-[44px] text-[#FFFFFF] text-center font-light md:w-[740px] w-full">
+            {t("description")}
           </Description>
         </div>
         <div className="flex flex-col items-center justify-center md:justify-between relative overflow-hidden h-[550px] mt-10 rounded-[12px] bg-black border-[0.1px] border-[#313131]">
@@ -31,15 +33,15 @@ const About = () => {
                 alt="img"
               />
               <Button className="!bg-[#2D2D2D] text-white !w-[81px] h-[44px] !rounded-[20px]">
-                Video
+                {t("video")}
               </Button>
             </div>
             <div className="flex gap-5 flex-col md:flex-row justify-center md:w-[75%] w-full py-[10px] border-t-[0.1px] border-[#acacac]">
               <Title className="text-white md:text-[20px] text-[18px] font-[100] md:w-[400px] w-full text-center">
-                Our approach combines aesthetics, technology, and strategy.
+                {t("video_description")}
               </Title>
               <Title className="text-white md:text-[20px] text-[18px] font-[100] md:w-[400px] w-full text-center">
-                Operations in UAE, Switzerland, USA, Kyrgyzstan & more.
+                {t("video_description2")}
               </Title>
             </div>
           </div>

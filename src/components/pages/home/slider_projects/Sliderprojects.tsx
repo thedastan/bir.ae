@@ -21,46 +21,45 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Button from "@/components/ui/button/Button";
-
-const data = [
-  {
-    img: img,
-    title: "Dennis Yao Yu",
-    title2: "Co-Founder & CEO",
-    description:
-      "“Thank you to the team for the amazing website! Everything was done carefully, thoughtfully, and exactly how we envisioned it. A pleasure to work with.”",
-  },
-  {
-    img: img2,
-    title: "Dennis Yao Yu",
-    title2: "Co-Founder & CEO",
-    description:
-      "“Thank you to the team for the amazing website! Everything was done carefully, thoughtfully, and exactly how we envisioned it. A pleasure to work with.”",
-  },
-  {
-    img: img3,
-    title: "Dennis Yao Yu",
-    title2: "Co-Founder & CEO",
-    description:
-      "“Thank you to the team for the amazing website! Everything was done carefully, thoughtfully, and exactly how we envisioned it. A pleasure to work with.”",
-  },
-  {
-    img: img4,
-    title: "Dennis Yao Yu",
-    title2: "Co-Founder & CEO",
-    description:
-      "“Thank you to the team for the amazing website! Everything was done carefully, thoughtfully, and exactly how we envisioned it. A pleasure to work with.”",
-  },
-  {
-    img: img5,
-    title: "Dennis Yao Yu",
-    title2: "Co-Founder & CEO",
-    description:
-      "“Thank you to the team for the amazing website! Everything was done carefully, thoughtfully, and exactly how we envisioned it. A pleasure to work with.”",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const Sliderprojects = () => {
+  const t = useTranslations("Slider");
+  //  {t("title")}
+
+  const data = [
+    {
+      img: img,
+
+      description: t("description"),
+    },
+    {
+      img: img2,
+
+      description: t("description"),
+    },
+    {
+      img: img3,
+
+      description: t("description"),
+    },
+    {
+      img: img4,
+
+      description: t("description"),
+    },
+    {
+      img: img5,
+
+      description: t("description"),
+    },
+    {
+      img: img6,
+
+      description: t("description"),
+    },
+  ];
+
   return (
     <section className="py-[100px] relative">
       <div className="container relative">
@@ -95,19 +94,18 @@ const Sliderprojects = () => {
               {data.map((el, index) => (
                 <SwiperSlide key={index}>
                   <div>
-                    <div className="flex items-center mt-[60px] gap-2">
-                      <Image src={el.img} alt="Avatar" />
-                      <div className="bg-[#424242] w-[1px] h-[52px]"></div>
-                      <div className="flex flex-col">
-                        <Title className="!text-[24px] text-white">
-                          {el.title}
+                    <div className="flex justify-between items-center mt-[60px] gap-2">
+                      <Image className="" src={el.img} alt="Avatar" />
+                      <div className="flex flex-col items-end md:w-[200px] w-[180px]">
+                        <Title className="!text-[24px]   text-end text-white">
+                          Dennis Yao Yu
                         </Title>
-                        <Title className="!text-[18px] text-[#adadad] mt-1">
-                          {el.title2}
+                        <Title className="!text-[18px]  text-end text-gray-400 mt-1">
+                          Co-Founder & CEO
                         </Title>
                       </div>
                     </div>
-                    <Description className="mt-[60px] md:!text-[44px] !text-[32px] text-white">
+                    <Description className="mt-[60px] md:!text-[44px] !text-[28px] text-white">
                       {el.description}
                     </Description>
                   </div>
@@ -134,7 +132,7 @@ const Sliderprojects = () => {
           {/* Правая колонка — видео */}
           <div className="flex md:w-[322px] w-full md:h-auto h-[575px] md:mt-0 mt-[60px] justify-center items-center rounded-[12px] bg-[#101010] border border-[#313131]">
             <Button className="!bg-[#2D2D2D] text-white !w-[81px] h-[44px] !rounded-[20px]">
-              Video
+              {t("video")}
             </Button>
           </div>
         </div>

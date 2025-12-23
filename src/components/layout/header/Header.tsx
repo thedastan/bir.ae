@@ -8,13 +8,14 @@ import logo from "@/assets/images/logo.png";
 
 import { PAGE } from "@/config/pages/public-page.config";
 import BurgerMenu from "./BurgerMenu";
-import { navbar } from "@/lib/navbar";
 import LanguageSelect from "./LanguageModal";
+import useNavbar from "@/components/layout/navbar";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const lineColor = isOpen || scrolled ? "bg-black" : "bg-white";
+  const navbar = useNavbar();
 
   useEffect(() => {
     const target = document.getElementById("hero-observer");

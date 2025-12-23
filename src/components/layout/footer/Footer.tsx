@@ -4,13 +4,16 @@ import Link from "next/link";
 import img from "@/assets/images/footer.png";
 import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("Footer");
+
   return (
     <footer className="bg-[#101010] py-[30px] pt-[100px]">
       <div className="container">
         <div className="w-full flex text-start">
-          <Description className="text-[#FFFFFF]">contact us:</Description>
+          <Description className="text-[#FFFFFF]">{t("title")}</Description>
         </div>
         <div className="flex flex-wrap justify-between text-[#FFFFFF] mt-[20px]">
           <Link

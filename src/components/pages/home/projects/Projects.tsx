@@ -18,63 +18,60 @@ import img4 from "@/assets/images/project_image4.png";
 
 import light from "@/assets/images/light3.png";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-
-const data = [
-  {
-    logo: logo,
-    img: img,
-    title: "Victor Sadygov Real Estate",
-    description:
-      "Victor Sadygov Real Estate — your expert in Dubai luxury properties",
-  },
-  {
-    logo: logo2,
-    img: img2,
-    title: "Zusammen",
-    description:
-      "Victor Sadygov Real Estate — your expert in Dubai luxury properties",
-  },
-  {
-    logo: logo3,
-    img: img3,
-    title: "Daria Studio",
-    description:
-      "Victor Sadygov Real Estate — your expert in Dubai luxury properties",
-  },
-  {
-    logo: logo4,
-    img: img4,
-    title: "Tez Kyzmat",
-    description:
-      "Victor Sadygov Real Estate — your expert in Dubai luxury properties",
-  },
-  {
-    logo: logo,
-    img: img,
-    title: "Victor Sadygov Real Estate (2)",
-    description: "Another project for Dubai real estate experts",
-  },
-  {
-    logo: logo2,
-    img: img2,
-    title: "Zusammen (2)",
-    description: "Second Zusammen project — global marketplace",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const Projects = () => {
   const [showAll, setShowAll] = useState(false);
+  const t = useTranslations("Projects");
+  //  {t("title")}
+
+  const data = [
+    {
+      logo: logo,
+      img: img,
+      title: t("card_title"),
+      description: t("card_description"),
+    },
+    {
+      logo: logo2,
+      img: img2,
+      title: t("card_title2"),
+      description: t("card_description"),
+    },
+    {
+      logo: logo3,
+      img: img4,
+      title: t("card_title3"),
+      description: t("card_description"),
+    },
+    {
+      logo: logo4,
+      img: img3,
+      title: t("card_title4"),
+      description: t("card_description"),
+    },
+    {
+      logo: logo,
+      img: img,
+      title: t("card_title"),
+      description: t("card_description"),
+    },
+    {
+      logo: logo2,
+      img: img2,
+      title: t("card_title2"),
+      description: t("card_description"),
+    },
+  ];
 
   const displayedData = showAll ? data : data.slice(0, 4);
 
   return (
     <section className="py-[100px]">
       <div className="container">
-        <TitleComponent className="text-white">
-          Our Selected Projects
-        </TitleComponent>
-        <Description className="text-white w-[240px] mt-[30px]">
-          A selection of our recent works built for global markets.
+        <TitleComponent className="text-white">{t("title")}</TitleComponent>
+        <Description className="text-white w-[250px] mt-[30px]">
+          {t("description")}
         </Description>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-1 mt-[30px]">
@@ -108,12 +105,12 @@ const Projects = () => {
                   <Button
                     className="
                       !bg-[#2D2D2D] text-white 
-                      !w-[130px] h-[44px] !rounded-[20px]
+                      !w-[145px] h-[44px] !rounded-[20px]
                       group-hover:!bg-white group-hover:text-black
                       transition-colors duration-300
                     "
                   >
-                    View Project
+                    {t("button")}
                   </Button>
                 </div>
                 <div>
@@ -135,7 +132,7 @@ const Projects = () => {
             onClick={() => setShowAll((prev) => !prev)}
             className="text-white text-[14px] flex items-center gap-3 hover:text-gray-300 transition-colors"
           >
-            {showAll ? "Show Less" : "All Projects"}
+            {showAll ? t("show") : t("all")}
             {showAll ? (
               <IoIosArrowUp size={18} />
             ) : (

@@ -7,8 +7,10 @@ import lattice2 from "@/assets/images/lattice3.png";
 import lattice3 from "@/assets/images/lattice.png";
 import Button from "@/components/ui/button/Button";
 import { TitleComponent } from "@/components/ui/text/TitleComponent";
+import { useTranslations } from "next-intl";
 
 const Contact = () => {
+  const t = useTranslations("contact");
   return (
     <section className="relative flex justify-center items-center h-[710px] md:h-[734]">
       <div className="w-full h-full overflow-hidden flex flex-col md:flex-row justify-start md:justify-between items-center relative">
@@ -25,25 +27,25 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex flex-col items-center gap-[40px] absolute z-10">
-        <TitleComponent className="text-white">contact us</TitleComponent>
+        <TitleComponent className="text-white">{t("title")}</TitleComponent>
         <div className="flex flex-col gap-[20px]">
           <input
             className="border-[0.1px] border-[#313131] w-[300px] h-[64px] rounded-[40px] bg-[#000000] p-[15px] text-white outline-none text-[16px]"
             type="text"
-            placeholder="Your name"
+            placeholder={t("name")}
           />
           <input
             className="border-[0.1px] border-[#313131] w-[300px] h-[64px] rounded-[40px] bg-[#000000] p-[15px] text-white outline-none text-[16px]"
             type="number"
-            placeholder="Your number"
+            placeholder={t("phone")}
           />
           <textarea
             className="w-[300px] h-[80px] bg-black rounded-[24px] outline-none p-[15px] text-white border-[0.1px] border-[#313131]"
-            placeholder="Message"
+            placeholder={t("message")}
           ></textarea>
 
           <Button className="bg-white !text-black w-[300px] h-[44px] !rounded-[40px]">
-            Send Request
+            {t("send")}
           </Button>
         </div>
       </div>

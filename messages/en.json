@@ -1,11 +1,66 @@
 {
-	"Hero": {
-		"description": "A ready-made and well-structured project setup with Next.js 15, TypeScript, and Tailwind CSS.",
-		"description2": "Built-in multilingual support with next-intl — start developing right away."
-	},
-	"Modal": {
-		"title": "Clone the repository",
-		"text": "Run this command in your terminal to get started.",
-		"btn": "Close"
-	}
+  "Hero": {
+    "title": "Your Digital Partner for Premium Web & App Experiences",
+    "title2": "We create digital legacies for ambitious brands",
+    "book": "Book Consultation"
+  },
+  "Projects": {
+    "title": "Our Selected Projects",
+    "description": "A selection of our recent works built for global markets.",
+    "button": "View Project",
+    "all": "All Projects",
+    "show": "Show Less",
+    "card_title": "Victor Sadygov Real Estate",
+    "card_description": "Victor Sadygov Real Estate — your expert in Dubai luxury properties",
+    "card_title2": "Zusammen",
+    "card_title3": "Daria Studio",
+    "card_title4": "Tez Kyzmat"
+  },
+  "What": {
+    "title": "What We Do",
+    "description": "Full-cycle digital production for your business.",
+    "web": "WEB DEVELOPMENT",
+    "web_description": "Custom, high-performance websites designed to convert.",
+    "mobile": "MOBILE APP DEVELOPMENT",
+    "mobile_description": "iOS & Android apps with intuitive UI/UX.",
+    "seo_google": "SEO & GOOGLE ADS",
+    "seo_google_descrioption": "Traffic growth, conversions & measurable results."
+  },
+  "About": {
+    "title": "About Our Studio",
+    "description": "We are a digital studio specializing in web and mobile development, UX/UI design, and digital marketing.",
+    "video": "Video",
+    "video_description": "Our approach combines aesthetics, technology, and strategy.",
+    "video_description2": "Operations in UAE, Switzerland, USA, Kyrgyzstan & more."
+  },
+  "Impact": {
+    "title": "impact",
+    "title2": "LAUNCHED PROJECTS",
+    "title3": "OPERATIONAL COUNTRIES",
+    "title4": "DUBAI HQ"
+  },
+  "Our_Clients": {
+    "title": "Our Clients"
+  },
+  "Slider": {
+    "video": "Video",
+    "Dennis": "Dennis Yao Yu",
+    "Founder": "Co-Founder & CEO",
+    "description": "“Thank you to the team for the amazing website! Everything was done carefully, thoughtfully, and exactly how we envisioned it. A pleasure to work with.”"
+  },
+  "contact": {
+    "title": "contact us",
+    "name": "Your name",
+    "phone": "Your number",
+    "message": "Message",
+    "send": "Send Request"
+  },
+  "Footer": {
+    "title": "contact us:"
+  },
+  "Header": {
+    "studies": "CASE STUDIES",
+    "services": "SERVICES",
+    "about": "ABOUT US"
+  }
 }

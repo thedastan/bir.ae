@@ -1,11 +1,11 @@
 "use client";
 
-import { navbar } from "@/lib/navbar";
 import Link from "next/link";
 import logo2 from "@/assets/images/logo_about.png";
 
 import Image from "next/image";
 import LanguageSelect from "./LanguageModal";
+import useNavbar from "@/components/layout/navbar";
 
 const BurgerMenu = ({
   isOpen,
@@ -14,6 +14,7 @@ const BurgerMenu = ({
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
 }) => {
+  const navbar = useNavbar();
   return (
     <div
       className={`fixed inset-0 z-50   w-full h-[100vh] transition-opacity duration-500 ${

@@ -1,3 +1,4 @@
+"use client";
 import { FC, ReactNode } from "react";
 import scss from "./LayoutPage.module.scss";
 import Header from "./header/Header"; // ← Этот компонент должен быть client, если использует useState/useEffect

@@ -6,32 +6,35 @@ import img2 from "@/assets/images/what2.png";
 import img3 from "@/assets/images/what3.png";
 import { Title } from "@/components/ui/text/Title";
 import Image from "next/image";
-
-const data = [
-  {
-    title: "WEB DEVELOPMENT",
-    description: "Custom, high-performance websites designed to convert.",
-    img: img,
-  },
-  {
-    title: "MOBILE APP DEVELOPMENT",
-    description: "iOS & Android apps with intuitive UI/UX.",
-    img: img2,
-  },
-  {
-    title: "SEO & GOOGLE ADS",
-    description: "Traffic growth, conversions & measurable results.",
-    img: img3,
-  },
-];
+import { useTranslations } from "next-intl";
 
 const Whatwedo = () => {
+  const t = useTranslations("What");
+  //  {t("title")}
+
+  const data = [
+    {
+      title: t("web"),
+      description: t("web_description"),
+      img: img,
+    },
+    {
+      title: t("mobile"),
+      description: t("mobile_description"),
+      img: img2,
+    },
+    {
+      title: t("seo_google"),
+      description: t("seo_google_descrioption"),
+      img: img3,
+    },
+  ];
   return (
     <section className="py-[100px] bg-[#060405] text-white">
       <div className="container">
-        <TitleComponent>What We Do</TitleComponent>
+        <TitleComponent>{t("title")}</TitleComponent>
         <Description className="font-[300] !text-[24px] md:mt-6 mt-4">
-          Full-cycle digital production for your business.
+          {t("description")}
         </Description>
 
         <div className="mt-12 md:flex hidden flex-col">
