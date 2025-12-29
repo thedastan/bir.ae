@@ -17,32 +17,43 @@ const Footer = () => {
         </div>
         <div className="flex flex-wrap justify-between text-[#FFFFFF] mt-[20px]">
           <Link
-            className="flex items-center gap-1 text-[44px] hover:text-[#C99769]"
-            href="/"
+            href="mailto:birdigital@gmail.com"
+            className="flex items-center gap-1 text-[38px] hover:text-[#C99769]"
           >
-            birdigital@
-            <GoArrowUpRight />
+            {/* Десктоп */}
+            <span className="hidden md:inline">birdigital@gmail.com</span>
+
+            {/* Мобильная версия */}
+            <span className="inline md:hidden">birdigital@gmail...</span>
+
+            {/* Иконка только на десктопе */}
+            <span className="hidden md:inline">
+              <GoArrowUpRight />
+            </span>
           </Link>
 
           <Link
-            className="flex items-center gap-1 text-[44px] hover:text-[#C99769]"
-            href="/"
+            target="_blank"
+            className="flex items-center gap-1 text-[38px] hover:text-[#C99769]"
+            href="https://wa.me/996559692626"
           >
             Whatsapp
             <GoArrowUpRight />
           </Link>
 
           <Link
-            className="flex items-center gap-1 text-[44px] hover:text-[#C99769]"
-            href="/"
+            target="_blank"
+            className="flex items-center gap-1 text-[38px] hover:text-[#C99769]"
+            href="https://www.instagram.com/dastan.mukeev/"
           >
             instagram
             <GoArrowUpRight />
           </Link>
 
           <Link
-            className="flex items-center gap-1 text-[44px] hover:text-[#C99769]"
-            href="/"
+            target="_blank"
+            className="flex items-center gap-1 text-[38px] hover:text-[#C99769]"
+            href="https://t.me/dastan_mukeev"
           >
             telegram
             <GoArrowUpRight />

@@ -80,3 +80,9 @@ body {
   opacity: 1;
   width: 16px; /* опционально: сделать активную точку шире */
 }
+
+.notify.success {
+  background: #2ecc71 !important;
+  color: white !important;
+  width: 260px;
+}

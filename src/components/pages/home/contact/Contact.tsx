@@ -9,8 +9,45 @@ import Button from "@/components/ui/button/Button";
 import { TitleComponent } from "@/components/ui/text/TitleComponent";
 import { useTranslations } from "next-intl";
 
+import { useForm, SubmitHandler } from "react-hook-form";
+import axios from "axios";
+import { toast } from "alert-go";
+import "alert-go/dist/notifier.css";
+
+interface IFormTelegram {
+  name: string;
+  phone: number;
+  message: string;
+}
+
 const Contact = () => {
   const t = useTranslations("contact");
+
+  const { register, handleSubmit, reset } = useForm<IFormTelegram>();
+
+  const messageModel = (data: IFormTelegram) => {
+    let messageTG = `Name: <b>${data.name}</b>\n`;
+    messageTG += `Number:  <b>${data.phone} </b>\n`;
+    messageTG += `Message: <b>${data.message}</b>\n`;
+    return messageTG;
+  };
+
+  const onSubmit: SubmitHandler<IFormTelegram> = async (data) => {
+    await axios.post(
+      `https://api.telegram.org/bot${"8350716333:AAGQgwqOvcm5cuo_8lIIuj_mkDbxZiAmo1s"}/sendMessage`,
+      {
+        chat_id: -1003456520848,
+        parse_mode: "html",
+        text: messageModel(data),
+      }
+    );
+    reset();
+    toast.success(t("success"), {
+      position: "top-center",
+      duration: 3000,
+    });
+  };
+
   return (
     <section className="relative flex justify-center items-center h-[710px] md:h-[734]">
       <div className="w-full h-full overflow-hidden flex flex-col md:flex-row justify-start md:justify-between items-center relative">
@@ -30,26 +67,35 @@ const Contact = () => {
         <TitleComponent className="text-white text-center">
           {t("title")}
         </TitleComponent>
-        <div className="flex flex-col gap-[20px]">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col gap-[20px]"
+        >
           <input
+            {...register("name", { required: true })}
             className="border-[0.1px] border-[#313131] w-[300px] h-[64px] rounded-[40px] bg-[#000000] p-[15px] text-white outline-none text-[16px]"
             type="text"
             placeholder={t("name")}
           />
           <input
+            {...register("phone", { required: true })}
             className="border-[0.1px] border-[#313131] w-[300px] h-[64px] rounded-[40px] bg-[#000000] p-[15px] text-white outline-none text-[16px]"
-            type="number"
+            type="text"
             placeholder={t("phone")}
           />
           <textarea
+            {...register("message", { required: true })}
             className="w-[300px] h-[80px] bg-black rounded-[24px] outline-none p-[15px] text-white border-[0.1px] border-[#313131]"
             placeholder={t("message")}
           ></textarea>
 
-          <button className="bg-white !text-black w-[300px] h-[44px] !rounded-[40px]">
+          <button
+            type="submit"
+            className="bg-white !text-black w-[300px] h-[44px] !rounded-[40px]"
+          >
             {t("send")}
           </button>
-        </div>
+        </form>
       </div>
     </section>
   );

@@ -53,7 +53,8 @@
     "name": "Your name",
     "phone": "Your number",
     "message": "Message",
-    "send": "Send Request"
+    "send": "Send Request",
+    "success": "Message sent successfully!"
   },
   "Footer": {
     "title": "contact us:"
