@@ -132,11 +132,13 @@ const Sliderprojects = () => {
           {/* Правая колонка — видео */}
           <div
             data-aos="fade-up"
-            className="flex md:w-[322px] w-full md:h-auto h-[575px] md:mt-0 mt-[60px] justify-center items-center rounded-[12px] bg-[#101010] border border-[#313131]"
+            className="flex md:w-[322px] overflow-hidden w-full md:h-auto h-[570px] md:mt-0 mt-[60px] justify-center items-center rounded-[12px] bg-[#101010] md:border border-[#313131]"
           >
-            <Button className="!bg-[#2D2D2D] text-white !w-[81px] h-[44px] !rounded-[20px]">
-              {t("video")}
-            </Button>
+            <iframe
+              className="w-full h-full object-cover"
+              src="/dastan_mukeev.mp4"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
           </div>
         </div>
       </div>

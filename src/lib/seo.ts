@@ -1,10 +1,12 @@
+import { SEO_KEY_WORDS } from "@/constants/seo";
+
 // lib/seo.ts
 export const generateMetadata = ({
   title,
   description,
   url,
   image,
-  keywords = "Bir", ////!
+  keywords = SEO_KEY_WORDS,
 }: {
   title: string;
   description: string;
@@ -17,8 +19,8 @@ export const generateMetadata = ({
   keywords,
   image,
   robots: "index, follow",
-  authors: [{ name: "Bir" }], ////! Имя проекта
-  publisher: "Bir", ////! Имя проекта
+  authors: [{ name: "Bir digital" }],
+  publisher: "Bir",
   viewport: "width=device-width, initial-scale=1.0",
   openGraph: {
     title,
@@ -26,7 +28,7 @@ export const generateMetadata = ({
     url,
     type: "website",
     locale: "ru_KG",
-    siteName: "Bir", ////! Имя проекта
+    siteName: "Bir digital",
     images: [
       {
         url: image,
@@ -55,14 +57,14 @@ export const generateMetadata = ({
 
 // Дополнительная функция для структурированных данных
 
-// export const generateStructuredData = () => ({
-// 	'@context': 'https://schema.org',
-// 	'@type': 'WebSite',
-// 	'name': 'Bir', ////! Имя проекта
-// 	'url': 'https://next-structure-seven.vercel.app/', ////! url проекта
-// 	'potentialAction': {
-// 			'@type': 'SearchAction',
-// 			'target': 'https://next-structure-seven.vercel.app/search?q={search_term_string}', ////! Имя проекта
-// 			'query-input': 'required name=search_term_string'
-// 	}
-// });
+export const generateStructuredData = () => ({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Bir digital",
+  url: "https://bir-ten.vercel.app/",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://bir-ten.vercel.app/search?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+});

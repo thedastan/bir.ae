@@ -12,6 +12,7 @@ import Impact from "./impact/Impact";
 
 import "aos/dist/aos.css";
 import Aos from "aos";
+import MapMabile from "./map/MapMobile";
 
 const HomeComponents = () => {
   React.useEffect(() => {
@@ -29,6 +30,7 @@ const HomeComponents = () => {
       <About />
       <Impact />
       <Map />
+      <MapMabile />
       <Ourclients />
       <Sliderprojects />
       <Contact />

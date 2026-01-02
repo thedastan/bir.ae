@@ -63,7 +63,12 @@ const Footer = () => {
           <Image className="w-full" src={img} alt="img" />
           <div className="w-full flex text-start mt-[20px]">
             <Description className="text-[#FFFFFF]">
-              © 2025 B1R DIGITAL
+              <Link
+                target="_blank"
+                href="https://www.instagram.com/dastan.mukeev/"
+              >
+                © 2025 B1R DIGITAL
+              </Link>
             </Description>
           </div>
         </div>

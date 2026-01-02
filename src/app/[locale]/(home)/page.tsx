@@ -4,7 +4,7 @@ import { generateMetadata } from "@/lib/seo";
 export const metadata = generateMetadata({
   title: "Bir",
   description: "Bir",
-  url: "https://next-structure-seven.vercel.app/",
+  url: "https://bir-ten.vercel.app/",
   image: "/bir.png",
 });
 
