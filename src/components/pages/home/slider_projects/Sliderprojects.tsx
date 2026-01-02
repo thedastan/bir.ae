@@ -134,11 +134,15 @@ const Sliderprojects = () => {
             data-aos="fade-up"
             className="flex md:w-[322px] overflow-hidden w-full md:h-auto h-[570px] md:mt-0 mt-[60px] justify-center items-center rounded-[12px] bg-[#101010] md:border border-[#313131]"
           >
-            <iframe
+            <video
               className="w-full h-full object-cover"
               src="/dastan_mukeev.mp4"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>
+              controls // опционально: добавляет элементы управления
+              playsInline
+              // уберите autoplay, если не хотите автовоспроизведения
+            >
+              Ваш браузер не поддерживает видео.
+            </video>
           </div>
         </div>
       </div>
