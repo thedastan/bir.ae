@@ -49,7 +49,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative flex justify-center items-center h-[710px] md:h-[734]">
+    <section
+      id="contact"
+      className="relative flex justify-center items-center h-[710px] md:h-[734]"
+    >
       <div className="w-full h-full overflow-hidden flex flex-col md:flex-row justify-start md:justify-between items-center relative">
         <div className="w-full h-full flex items-center">
           <Image className="hidden md:flex" src={lattice2} alt="img" />

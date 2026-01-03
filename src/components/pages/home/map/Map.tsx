@@ -4,14 +4,15 @@ import lattice from "@/assets/images/lattice4.png";
 import map from "@/assets/svg/map.svg";
 import gr from "@/assets/images/gr.png";
 
-import country_ae from "@/assets/images/country_ae.png";
-import country_ru from "@/assets/images/country_ru.png";
-import country_us from "@/assets/images/country_us.png";
-import country_kz from "@/assets/images/country_kz.png";
+import country_ae from "@/assets/svg/ae.svg";
+import country_ru from "@/assets/svg/ru.svg";
+import country_us from "@/assets/svg/us.svg";
+import country_kz from "@/assets/svg/kz.svg";
+
 import country_kg from "@/assets/svg/KG - Kyrgyzstan.svg";
-import country_ch from "@/assets/images/country_ch.png";
-import country_cn from "@/assets/images/country_cn.png";
-import country_it from "@/assets/images/country_it.png";
+import country_ch from "@/assets/svg/ch.svg";
+import country_cn from "@/assets/svg/cn.svg";
+import country_it from "@/assets/svg/it.svg";
 import { Description } from "@/components/ui/text/Description";
 
 import line_usa from "@/assets/line/usa.png";

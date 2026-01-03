@@ -7,15 +7,15 @@ export const useNavbar = () => {
   return [
     {
       name: t("studies"),
-      link: PAGE.HOME,
+      link: PAGE.CASE,
     },
     {
       name: t("services"),
-      link: PAGE.HOME,
+      link: PAGE.SERVICE,
     },
     {
       name: t("about"),
-      link: PAGE.HOME,
+      link: PAGE.ABOUT,
     },
   ];
 };

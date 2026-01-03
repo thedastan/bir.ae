@@ -7,6 +7,9 @@ import logo from "@/assets/images/logo_project4.png";
 import logo2 from "@/assets/images/logo_project9.png";
 import logo3 from "@/assets/images/logo_project1.png";
 import logo4 from "@/assets/images/logo_project2.png";
+import logo5 from "@/assets/images/asman-logo-new.webp";
+import logo6 from "@/assets/images/n0-homme.png";
+
 import Image from "next/image";
 import Button from "@/components/ui/button/Button";
 import { Title } from "@/components/ui/text/Title";
@@ -15,59 +18,68 @@ import img from "@/assets/images/project_image.png";
 import img2 from "@/assets/images/project_image2.png";
 import img3 from "@/assets/images/project_image3.png";
 import img4 from "@/assets/images/project_image4.png";
+import img5 from "@/assets/images/asman.webp";
+import img6 from "@/assets/images/no-homme.png";
 
 import light from "@/assets/images/light3.png";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useTranslations } from "next-intl";
+import LinkButton from "@/components/ui/button/LinkButton";
+import NoHomme from "@/assets/svg/no-homme";
 
 const Projects = () => {
   const [showAll, setShowAll] = useState(false);
   const t = useTranslations("Projects");
-  //  {t("title")}
 
   const data = [
     {
       logo: logo,
       img: img,
       title: t("card_title"),
-      description: t("card_description"),
+      description: t("card_description1"),
+      link: "https://sadygovestate.com/ru",
     },
     {
       logo: logo2,
       img: img2,
       title: t("card_title2"),
-      description: t("card_description"),
+      description: t("card_description2"),
+      link: "https://www.zusammench.com/ru",
     },
     {
       logo: logo3,
       img: img4,
       title: t("card_title3"),
-      description: t("card_description"),
+      description: t("card_description3"),
+      link: "https://www.dariastudio.ae/ru",
     },
     {
       logo: logo4,
       img: img3,
       title: t("card_title4"),
-      description: t("card_description"),
+      description: t("card_description4"),
+      link: "https://tezkyzmat.kg/",
     },
     {
-      logo: logo,
-      img: img,
-      title: t("card_title"),
-      description: t("card_description"),
+      logo: logo5,
+      img: img5,
+      title: t("card_title5"),
+      description: t("card_description5"),
+      link: "https://asman-city.kg/",
     },
     {
-      logo: logo2,
-      img: img2,
-      title: t("card_title2"),
-      description: t("card_description"),
+      logo: logo6,
+      img: img6,
+      title: t("card_title6"),
+      description: t("card_description6"),
+      link: "https://www.no-homme.com/",
     },
   ];
 
   const displayedData = showAll ? data : data.slice(0, 4);
 
   return (
-    <section className="py-[100px]">
+    <section id="case" className="py-[100px]">
       <div className="container">
         <TitleComponent className="text-white">{t("title")}</TitleComponent>
         <Description className="text-white w-[250px] mt-[30px]">
@@ -98,12 +110,14 @@ const Projects = () => {
               <div className="flex flex-col justify-between w-full h-full absolute md:p-[30px] p-[20px]">
                 <div className="flex justify-between items-center mb-4">
                   <Image
-                    className="w-[118px] md:w-[148px]"
+                    className="w-[118px] md:w-[148px] h-[70px] object-contain"
                     src={el.logo}
                     alt="logo"
                   />
 
-                  <Button
+                  <LinkButton
+                    href={el.link}
+                    target="_blank"
                     className="
                       !bg-[#2D2D2D] text-white 
                       !w-[150px] md:!w-[145px] h-[44px] !rounded-[20px]
@@ -112,7 +126,7 @@ const Projects = () => {
                     "
                   >
                     {t("button")}
-                  </Button>
+                  </LinkButton>
                 </div>
                 <div>
                   <Title className="text-white !text-[24px] font-[600]">

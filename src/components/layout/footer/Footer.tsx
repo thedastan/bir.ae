@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 
 const Footer = () => {
   const t = useTranslations("Footer");
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-[#101010] py-[30px] pt-[100px]">
@@ -67,7 +68,7 @@ const Footer = () => {
                 target="_blank"
                 href="https://www.instagram.com/dastan.mukeev/"
               >
-                © 2025 B1R DIGITAL
+                © {currentYear} B1R DIGITAL
               </Link>
             </Description>
           </div>

@@ -6,6 +6,7 @@ import { TitleComponent } from "@/components/ui/text/TitleComponent";
 import { Description } from "@/components/ui/text/Description";
 import Button from "@/components/ui/button/Button";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const Hero = () => {
   const bgRef = useRef<HTMLDivElement>(null);
@@ -34,7 +35,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="w-full h-[100vh] overflow-hidden relative">
+    <section id="hero" className="w-full h-[100vh] overflow-hidden relative">
       <video
         src="/Sahara.mp4"
         autoPlay
@@ -66,7 +67,7 @@ const Hero = () => {
               </TitleComponent>
               <div className="">
                 <Button className="bg-[#ffffff49] hover:bg-white hover:text-black border-[0.1px] border-[#ffffff] duration-500 px-[20px] !h-[44px] !rounded-[30px]">
-                  {t("book")}
+                  <Link href="#contact">{t("book")}</Link>
                 </Button>
               </div>
             </div>

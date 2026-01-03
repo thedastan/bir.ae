@@ -13,7 +13,7 @@ const About = () => {
   const t = useTranslations("About");
 
   return (
-    <section className="bg-[#101010] py-[100px]">
+    <section id="about" className="bg-[#101010] py-[100px]">
       <div className="container">
         <div
           className="w-full flex flex-col items-center gap-5"

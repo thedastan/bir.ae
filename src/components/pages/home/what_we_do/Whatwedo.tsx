@@ -30,7 +30,7 @@ const Whatwedo = () => {
     },
   ];
   return (
-    <section className="py-[100px] bg-[#060405] text-white">
+    <section id="service" className="py-[100px] bg-[#060405] text-white">
       <div className="container">
         <TitleComponent>{t("title")}</TitleComponent>
         <Description className="font-[300] !text-[24px] md:mt-6 mt-4">

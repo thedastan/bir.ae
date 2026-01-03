@@ -35,6 +35,11 @@ body {
   @extend %unscroll;
 }
 
+html,
+body {
+  scroll-behavior: smooth; /* для обычного скролла */
+}
+
 /* ===== Container ===== */
 .container {
   width: 100%;

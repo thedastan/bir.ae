@@ -10,11 +10,20 @@
     "button": "View Project",
     "all": "All Projects",
     "show": "Show Less",
+
+    "card_description1": "Victor Sadygov Real Estate — an expert in luxury real estate in Dubai.",
+    "card_description2": "We developed a website for Zusammen — an organization focused on the labor and social integration of migrants in Central Switzerland.",
+    "card_description3": "A full-cycle architectural studio specializing in interior design and renovation in Dubai.",
+    "card_description4": "We developed a website and a mobile application for Tez Kyzmat, a service that helps clients quickly find and order auto parts and automotive services in Kyrgyzstan.",
+    "card_description5": "We developed a web catalog and an ERP system that объединяет all real estate properties into a unified database.",
+    "card_description6": "We developed a premium website that conveys an atmosphere of exclusivity and brings all club services together in a stylish and user-friendly format.",
+
     "card_title": "Victor Sadygov Real Estate",
-    "card_description": "Victor Sadygov Real Estate — your expert in Dubai luxury properties",
     "card_title2": "Zusammen",
     "card_title3": "Daria Studio",
-    "card_title4": "Tez Kyzmat"
+    "card_title4": "Tez Kyzmat",
+    "card_title5": "Asman-sity",
+    "card_title6": "No-Homme"
   },
   "What": {
     "title": "What We Do",

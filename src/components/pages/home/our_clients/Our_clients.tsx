@@ -11,18 +11,27 @@ import logo_project7 from "@/assets/images/logo_project7.png";
 import logo_project8 from "@/assets/images/logo_project8.png";
 import { useTranslations } from "next-intl";
 
+import daria from "@/assets/svg/daria.svg";
+import tez_kyzmat from "@/assets/svg/tez_kyzmat.svg";
+import nohomme from "@/assets/svg/nohomme.svg";
+import sadygov from "@/assets/svg/sadygov.svg";
+import kurak from "@/assets/svg/kurak.svg";
+import mediacal from "@/assets/svg/mediacal.svg";
+import baytik from "@/assets/svg/baytik.svg";
+import asman from "@/assets/svg/asman.svg";
+
 const data = [
-  { img: logo_project1 },
-  { img: logo_project2 },
-  { img: logo_project3 },
-  { img: logo_project4 },
+  { img: daria },
+  { img: tez_kyzmat },
+  { img: nohomme },
+  { img: sadygov },
 ];
 
 const data2 = [
-  { img: logo_project5 },
-  { img: logo_project6 },
-  { img: logo_project7 },
-  { img: logo_project8 },
+  { img: kurak },
+  { img: mediacal },
+  { img: baytik },
+  { img: asman },
 ];
 
 const Ourclients = () => {
