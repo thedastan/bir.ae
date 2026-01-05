@@ -91,11 +91,11 @@ const Header = () => {
 
           <div className="w-full md:max-w-[130px] max-w-0 text-end   flex justify-end">
             <Link
-              href={"tel:+79259009090"}
+              href={"tel:+971545272111"}
               target="_blank"
               className="md:flex hidden text-white text-[14px] font-[300]  text-end"
             >
-              +7 925 900 90 90
+              +971 545 272 111
             </Link>
           </div>
         </div>

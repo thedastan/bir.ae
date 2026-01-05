@@ -19,7 +19,7 @@ export const generateMetadata = ({
   keywords,
   image,
   robots: "index, follow",
-  authors: [{ name: "Bir digital" }],
+  authors: [{ name: "Bir Digital" }],
   publisher: "Bir",
   viewport: "width=device-width, initial-scale=1.0",
   openGraph: {
@@ -28,7 +28,7 @@ export const generateMetadata = ({
     url,
     type: "website",
     locale: "ru_KG",
-    siteName: "Bir digital",
+    siteName: "Bir Digital",
     images: [
       {
         url: image,
@@ -61,10 +61,10 @@ export const generateStructuredData = () => ({
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Bir digital",
-  url: "https://bir-ten.vercel.app/",
+  url: "https://birae.vercel.app/",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://bir-ten.vercel.app/search?q={search_term_string}",
+    target: "https://birae.vercel.app/search?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 });

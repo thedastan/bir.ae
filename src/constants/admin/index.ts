@@ -3,12 +3,12 @@ export const IS_PRODUCTION = process.env.NODE_ENV === "production";
 
 export const FRONT_VERCEL = "";
 
-export const PHONE_NUMBER = "+996 708 771 849";
+export const PHONE_NUMBER = "+971545272111";
 
 export const WHATSAPP_NUMBER = PHONE_NUMBER;
 
-export const EMAIL_ADDRESS = "birdigital@gmail.com";
-export const INSTAGRAM = "";
+export const EMAIL_ADDRESS = "birgroup.kg@gmail.com";
+export const INSTAGRAM = "https://instagram.com/1digital.ae";
 export const LOCATION = "";
 
 /// links/
@@ -23,6 +23,6 @@ export const INSTAGRAM_LINK = `https://instagram.com/${INSTAGRAM}`;
 export const FACEBOOK_LINK = ``;
 export const YOUTUBE_LINK = ``;
 
-export const TELEGRAM_LINK = `https://t.me/dastan_mukeev`;
+export const TELEGRAM_LINK = `https://t.me/id100600`;
 
 export const LOCATION_LINK = "";
