@@ -15,7 +15,7 @@ export default async function handler(
   const links = [{ url: PAGE.HOME, changefreq: "daily", priority: 1.0 }];
 
   const stream = new SitemapStream({
-    hostname: "https://bir-ten.vercel.app/",
+    hostname: "https://birae.vercel.app",
   });
 
   res.writeHead(200, { "Content-Type": "application/xml" });

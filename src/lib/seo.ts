@@ -19,8 +19,8 @@ export const generateMetadata = ({
   keywords,
   image,
   robots: "index, follow",
-  authors: [{ name: "Bir Digital" }],
-  publisher: "Bir",
+  authors: [{ name: "B1R Digital" }],
+  publisher: "B1R",
   viewport: "width=device-width, initial-scale=1.0",
   openGraph: {
     title,
@@ -28,7 +28,7 @@ export const generateMetadata = ({
     url,
     type: "website",
     locale: "ru_KG",
-    siteName: "Bir Digital",
+    siteName: "B1R Digital",
     images: [
       {
         url: image,
@@ -60,7 +60,7 @@ export const generateMetadata = ({
 export const generateStructuredData = () => ({
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "Bir digital",
+  name: "B1R digital",
   url: "https://birae.vercel.app/",
   potentialAction: {
     "@type": "SearchAction",

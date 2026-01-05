@@ -7,4 +7,4 @@ export const SITE_DESCRIPTION =
 
 // KEY_WORDS проекта
 export const SEO_KEY_WORDS =
-  "website development in Switzerland | Zurich | website creation | website Geneva | create a website in Lausanne | Prices for websites | Order a website in Bern | website creation services | mobile application creation in Lucerne | web studio | turnkey website in Lucerne";
+  "website development in UAE | Dubai | Abu Dhabi| website creation | website Dubai | create a website in Lausanne | Prices for websites | Order a website in Bern | website creation services | mobile application creation in Lucerne | web studio | turnkey website in Lucerne";
