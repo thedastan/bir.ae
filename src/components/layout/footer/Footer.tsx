@@ -5,6 +5,13 @@ import img from "@/assets/images/footer.png";
 import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
 import { useTranslations } from "next-intl";
+import {
+  EMAIL_ADDRESS,
+  EMAIL_ADDRESS_LINK,
+  INSTAGRAM_LINK,
+  TELEGRAM_LINK,
+  WHATSAPP_LINK,
+} from "@/constants/admin";
 
 const Footer = () => {
   const t = useTranslations("Footer");
@@ -18,11 +25,11 @@ const Footer = () => {
         </div>
         <div className="flex flex-wrap justify-between text-[#FFFFFF] mt-[20px]">
           <Link
-            href="mailto:birdigital@gmail.com"
+            href={EMAIL_ADDRESS_LINK}
             className="flex items-center gap-1 text-[38px] hover:text-[#C99769]"
           >
             {/* Десктоп */}
-            <span className="hidden md:inline">birdigital@gmail.com</span>
+            <span className="hidden md:inline">{EMAIL_ADDRESS}</span>
 
             {/* Мобильная версия */}
             <span className="inline md:hidden">birdigital@gmail...</span>
@@ -36,7 +43,7 @@ const Footer = () => {
           <Link
             target="_blank"
             className="flex items-center gap-1 text-[38px] hover:text-[#C99769]"
-            href="https://wa.me/996559692626"
+            href={WHATSAPP_LINK}
           >
             Whatsapp
             <GoArrowUpRight />
@@ -45,7 +52,7 @@ const Footer = () => {
           <Link
             target="_blank"
             className="flex items-center gap-1 text-[38px] hover:text-[#C99769]"
-            href="https://www.instagram.com/dastan.mukeev/"
+            href={INSTAGRAM_LINK}
           >
             instagram
             <GoArrowUpRight />
@@ -54,7 +61,7 @@ const Footer = () => {
           <Link
             target="_blank"
             className="flex items-center gap-1 text-[38px] hover:text-[#C99769]"
-            href="https://t.me/dastan_mukeev"
+            href={TELEGRAM_LINK}
           >
             telegram
             <GoArrowUpRight />
@@ -64,10 +71,7 @@ const Footer = () => {
           <Image className="w-full" src={img} alt="img" />
           <div className="w-full flex text-start mt-[20px]">
             <Description className="text-[#FFFFFF]">
-              <Link
-                target="_blank"
-                href="https://www.instagram.com/dastan.mukeev/"
-              >
+              <Link target="_blank" href={INSTAGRAM_LINK}>
                 © {currentYear} B1R DIGITAL
               </Link>
             </Description>

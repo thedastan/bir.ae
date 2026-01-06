@@ -1,12 +1,8 @@
-import Button from "@/components/ui/button/Button";
 import { Description } from "@/components/ui/text/Description";
 import { TitleComponent } from "@/components/ui/text/TitleComponent";
-import React from "react";
 import logo from "@/assets/images/logo.png";
 import Image from "next/image";
 import { Title } from "@/components/ui/text/Title";
-// import light from "@/assets/images/light.png";
-import light from "@/assets/images/light2.png";
 import { useTranslations } from "next-intl";
 
 const About = () => {

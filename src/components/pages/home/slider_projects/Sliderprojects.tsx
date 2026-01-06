@@ -135,14 +135,13 @@ const Sliderprojects = () => {
             className="flex md:w-[322px] overflow-hidden w-full md:h-auto h-[570px] md:mt-0 mt-[60px] justify-center items-center rounded-[12px] bg-[#101010] md:border border-[#313131]"
           >
             <video
-              className="w-full h-full object-cover"
-              src="/dastan_mukeev.mp4"
-              controls // опционально: добавляет элементы управления
+              src="/Sahara.mp4"
+              autoPlay
+              muted
+              loop
               playsInline
-              // уберите autoplay, если не хотите автовоспроизведения
-            >
-              Ваш браузер не поддерживает видео.
-            </video>
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
