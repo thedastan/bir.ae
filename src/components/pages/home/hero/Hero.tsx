@@ -5,12 +5,14 @@ import hero_gradient from "@/assets/images/hero-gradient.png";
 import { TitleComponent } from "@/components/ui/text/TitleComponent";
 import { Description } from "@/components/ui/text/Description";
 import Button from "@/components/ui/button/Button";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 
 const Hero = () => {
   const bgRef = useRef<HTMLDivElement>(null);
   const t = useTranslations("Hero");
+  const locale = useLocale();
+  const isArabic = locale === "ar";
 
   useEffect(() => {
     let ticking = false;
@@ -56,7 +58,11 @@ const Hero = () => {
       >
         <div className="relative flex justify-center items-center w-full h-full">
           <div className="container w-full h-full flex flex-col gap-[100px] md:gap-[50px] items-center justify-center absolute">
-            <div className="w-full flex justify-start text-start">
+            <div
+              className={`w-full flex text-start ${
+                isArabic ? "justify-end text-end" : "justify-start"
+              }`}
+            >
               <Description className="md:w-[400px] w-[280px] text-white md:!text-[24px] !text-[16px]">
                 {t("title")}
               </Description>
@@ -71,7 +77,11 @@ const Hero = () => {
                 </Button>
               </div>
             </div>
-            <div className="w-full flex justify-end text-end">
+            <div
+              className={`w-full flex text-start ${
+                isArabic ? "justify-start text-start" : "justify-end"
+              }`}
+            >
               <Description className="md:w-[400px] w-[250px] text-white md:!text-[24px] !text-[16px]">
                 {t("title2")}
               </Description>

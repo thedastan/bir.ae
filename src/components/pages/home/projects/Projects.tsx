@@ -1,18 +1,22 @@
 "use client";
 
+import React, { useState } from "react";
+import Image from "next/image";
+import { useTranslations, useLocale } from "next-intl";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+
 import { Description } from "@/components/ui/text/Description";
 import { TitleComponent } from "@/components/ui/text/TitleComponent";
-import React, { useState } from "react";
+import { Title } from "@/components/ui/text/Title";
+import Button from "@/components/ui/button/Button";
+import LinkButton from "@/components/ui/button/LinkButton";
+
 import logo from "@/assets/images/logo_project4.png";
 import logo2 from "@/assets/images/logo_project9.png";
 import logo3 from "@/assets/images/logo_project1.png";
 import logo4 from "@/assets/images/logo_project2.png";
 import logo5 from "@/assets/images/asman-logo-new.webp";
 import logo6 from "@/assets/images/n0-homme.png";
-
-import Image from "next/image";
-import Button from "@/components/ui/button/Button";
-import { Title } from "@/components/ui/text/Title";
 
 import img from "@/assets/images/project_image.png";
 import img2 from "@/assets/images/project_image2.png";
@@ -22,19 +26,17 @@ import img5 from "@/assets/images/asman.webp";
 import img6 from "@/assets/images/no-homme.png";
 
 import light from "@/assets/images/light3.png";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import { useTranslations } from "next-intl";
-import LinkButton from "@/components/ui/button/LinkButton";
-import NoHomme from "@/assets/svg/no-homme";
 
 const Projects = () => {
   const [showAll, setShowAll] = useState(false);
   const t = useTranslations("Projects");
+  const locale = useLocale();
+  const isArabic = locale === "ar";
 
   const data = [
     {
-      logo: logo,
-      img: img,
+      logo,
+      img,
       title: t("card_title"),
       description: t("card_description1"),
       link: "https://sadygovestate.com/ru",
@@ -79,18 +81,27 @@ const Projects = () => {
   const displayedData = showAll ? data : data.slice(0, 4);
 
   return (
-    <section id="case" className="py-[100px]">
+    <section id="case" className="py-[100px]" dir={isArabic ? "rtl" : "ltr"}>
       <div className="container">
-        <TitleComponent className="text-white">{t("title")}</TitleComponent>
-        <Description className="text-white w-[250px] mt-[30px]">
+        <TitleComponent
+          className={`text-white ${isArabic ? "text-right" : "text-left"}`}
+        >
+          {t("title")}
+        </TitleComponent>
+
+        <Description
+          className={`text-white w-[250px] mt-[30px] ${
+            isArabic ? "text-right" : "text-left"
+          }`}
+        >
           {t("description")}
         </Description>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-1 mt-[30px]">
           {displayedData.map((el, index) => (
             <div
+              key={`${el.title}-${index}`}
               data-aos="fade-up"
-              key={`${el.title}-${index}`} // уникальный ключ
               className="group flex h-[339px] relative overflow-hidden border-[0.1px] border-[#313131] rounded-[12px]"
               style={{
                 backgroundImage: `url(${light.src})`,
@@ -99,20 +110,24 @@ const Projects = () => {
                 backgroundRepeat: "no-repeat",
               }}
             >
-              <div className="w-full h-full transition-opacity duration-500  md:opacity-0 group-hover:opacity-100">
+              <div className="w-full h-full transition-opacity duration-500 md:opacity-0 group-hover:opacity-100">
                 <Image
-                  className="w-full h-full object-cover"
                   src={el.img}
                   alt="project image"
+                  className="w-full h-full object-cover"
                 />
               </div>
 
               <div className="flex flex-col justify-between w-full h-full absolute md:p-[30px] p-[20px]">
-                <div className="flex justify-between items-center mb-4">
+                <div
+                  className={`flex justify-between items-center mb-4 ${
+                    isArabic ? "flex-row-reverse" : ""
+                  }`}
+                >
                   <Image
-                    className="w-[118px] md:w-[148px] h-[70px] object-contain"
                     src={el.logo}
                     alt="logo"
+                    className="w-[118px] md:w-[148px] h-[70px] object-contain"
                   />
 
                   <LinkButton
@@ -128,11 +143,21 @@ const Projects = () => {
                     {t("button")}
                   </LinkButton>
                 </div>
+
                 <div>
-                  <Title className="text-white !text-[24px] font-[600]">
+                  <Title
+                    className={`text-white !text-[24px] font-[600] ${
+                      isArabic ? "text-right" : "text-left"
+                    }`}
+                  >
                     {el.title}
                   </Title>
-                  <Description className="text-white !text-[16px] md:w-[460px] w-full mt-3">
+
+                  <Description
+                    className={`text-white !text-[16px] md:w-[460px] w-full mt-3 ${
+                      isArabic ? "text-right" : "text-left"
+                    }`}
+                  >
                     {el.description}
                   </Description>
                 </div>
@@ -141,11 +166,13 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Кнопка "Показать всё / Скрыть" */}
+        {/* Show all / Hide */}
         <div className="w-full flex justify-center mt-[50px]">
           <button
             onClick={() => setShowAll((prev) => !prev)}
-            className="text-white text-[14px] flex items-center gap-3 hover:text-gray-300 transition-colors"
+            className={`text-white text-[14px] flex items-center gap-3 hover:text-gray-300 transition-colors ${
+              isArabic ? "flex-row-reverse" : ""
+            }`}
           >
             {showAll ? t("show") : t("all")}
             {showAll ? (

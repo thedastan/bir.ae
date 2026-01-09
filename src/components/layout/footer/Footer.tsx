@@ -4,7 +4,7 @@ import Link from "next/link";
 import img from "@/assets/images/footer.png";
 import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import {
   EMAIL_ADDRESS,
   EMAIL_ADDRESS_LINK,
@@ -15,12 +15,18 @@ import {
 
 const Footer = () => {
   const t = useTranslations("Footer");
+  const locale = useLocale();
+  const isArabic = locale === "ar";
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-[#101010] py-[30px] pt-[100px]">
       <div className="container">
-        <div className="w-full flex text-start">
+        <div
+          className={`w-full flex text-center  ${
+            isArabic ? "justify-end" : "justify-start"
+          }`}
+        >
           <Description className="text-[#FFFFFF]">{t("title")}</Description>
         </div>
         <div className="flex flex-wrap justify-between text-[#FFFFFF] mt-[20px]">

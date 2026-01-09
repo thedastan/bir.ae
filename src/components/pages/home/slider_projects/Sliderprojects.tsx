@@ -6,7 +6,6 @@ import img3 from "@/assets/images/logo_project3.png";
 import img4 from "@/assets/images/logo_project4.png";
 import img5 from "@/assets/images/logo_project4.png";
 import img6 from "@/assets/images/logo_project4.png";
-import img7 from "@/assets/images/logo_project4.png";
 
 import lattice from "@/assets/images/lattice.png";
 import bracket from "@/assets/images/bracket.png";
@@ -20,50 +19,26 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Button from "@/components/ui/button/Button";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 const Sliderprojects = () => {
   const t = useTranslations("Slider");
-  //  {t("title")}
+  const locale = useLocale();
+  const isRTL = locale === "ar"; // Если арабский — включаем RTL
 
   const data = [
-    {
-      img: img,
-
-      description: t("description"),
-    },
-    {
-      img: img2,
-
-      description: t("description"),
-    },
-    {
-      img: img3,
-
-      description: t("description"),
-    },
-    {
-      img: img4,
-
-      description: t("description"),
-    },
-    {
-      img: img5,
-
-      description: t("description"),
-    },
-    {
-      img: img6,
-
-      description: t("description"),
-    },
+    { img: img, description: t("description") },
+    { img: img2, description: t("description") },
+    { img: img3, description: t("description") },
+    { img: img4, description: t("description") },
+    { img: img5, description: t("description") },
+    { img: img6, description: t("description") },
   ];
 
   return (
-    <section className="py-[100px] relative">
+    <section className="py-[100px] relative" dir={isRTL ? "rtl" : "ltr"}>
       <div className="container relative">
-        {/* Фоновая сетка — абсолютно позиционирована, не влияет на поток */}
+        {/* Фоновая сетка */}
         <div className="absolute inset-0 flex md:justify-center overflow-hidden justify-end md:items-center items-start pointer-events-none z-0">
           <Image
             className="mt-[-100px] md:mt-0 mr-[-100px]"
@@ -72,8 +47,13 @@ const Sliderprojects = () => {
           />
         </div>
 
-        {/* Основной контент — в потоке, поверх фона */}
-        <div className="flex md:flex-row flex-col justify-between relative z-10">
+        {/* Основной контент */}
+        <div
+          className={`flex ${
+            isRTL ? "md:flex-row-reverse" : "md:flex-row"
+          } flex-col justify-between relative z-10`}
+        >
+          {/* Слайдер */}
           <div data-aos="fade-up" className="md:w-[800px] w-full">
             <Image src={bracket} alt="Quote bracket" />
 
@@ -93,19 +73,48 @@ const Sliderprojects = () => {
             >
               {data.map((el, index) => (
                 <SwiperSlide key={index}>
-                  <div>
-                    <div className="flex justify-between md:justify-start items-center mt-[60px] gap-2">
-                      <Image className="" src={el.img} alt="Avatar" />
-                      <div className="flex flex-col items-end md:w-[200px] w-[180px]">
-                        <Title className="!text-[24px]   text-end text-white">
+                  <div
+                    className={`flex flex-col ${
+                      isRTL ? "text-right" : "text-left"
+                    }`}
+                  >
+                    {/* Аватар + Имя */}
+                    <div
+                      className={`flex items-center mt-[60px] gap-2 ${
+                        isRTL
+                          ? "flex-row-reverse justify-end"
+                          : "flex-row justify-start"
+                      }`}
+                    >
+                      <Image src={el.img} alt="Avatar" />
+                      <div
+                        className={`flex flex-col ${
+                          isRTL ? "items-end" : "items-start"
+                        } md:w-[200px] w-[180px]`}
+                      >
+                        <Title
+                          className={`!text-[24px] ${
+                            isRTL ? "text-right" : "text-left"
+                          } text-white`}
+                        >
                           Dennis Yao Yu
                         </Title>
-                        <Title className="!text-[18px]  text-end text-gray-400 mt-1">
+                        <Title
+                          className={`!text-[18px] mt-1 ${
+                            isRTL ? "text-right" : "text-left"
+                          } text-gray-400`}
+                        >
                           Co-Founder & CEO
                         </Title>
                       </div>
                     </div>
-                    <Description className="mt-[60px] md:!text-[44px] !text-[28px] text-white">
+
+                    {/* Описание */}
+                    <Description
+                      className={`mt-[60px] md:!text-[44px] !text-[28px] text-white ${
+                        isRTL ? "text-right" : "text-left"
+                      }`}
+                    >
                       {el.description}
                     </Description>
                   </div>
@@ -118,11 +127,9 @@ const Sliderprojects = () => {
               <button className="swiper-button-prev-custom flex justify-center items-center border border-[#313131] text-[#C99769] text-[20px] rounded-[8px] w-[52px] h-[52px]">
                 <FaChevronLeft />
               </button>
-
-              <div className="">
+              <div>
                 <div className="swiper-pagination-dots flex justify-center w-[10px] gap-[12px]"></div>
               </div>
-
               <button className="swiper-button-next-custom flex justify-center items-center border border-[#313131] text-[#C99769] text-[20px] rounded-[8px] w-[52px] h-[52px]">
                 <FaChevronRight />
               </button>

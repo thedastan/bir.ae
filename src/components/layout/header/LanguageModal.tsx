@@ -18,6 +18,7 @@ const LanguageSelect = ({ textColor = "text-white" }: LanguageSelectProps) => {
   const options = [
     { value: "en", label: "ENG" },
     { value: "ru", label: "RU" },
+    { value: "ar", label: "AR" },
   ];
 
   const LanguageChange = (newLocale: string) => {
