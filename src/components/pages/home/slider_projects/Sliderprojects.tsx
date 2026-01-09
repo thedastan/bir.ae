@@ -125,13 +125,15 @@ const Sliderprojects = () => {
             {/* Навигация и пагинация */}
             <div className="flex w-[300px] mt-[60px] items-center justify-between gap-4">
               <button className="swiper-button-prev-custom flex justify-center items-center border border-[#313131] text-[#C99769] text-[20px] rounded-[8px] w-[52px] h-[52px]">
-                <FaChevronLeft />
+                {isRTL ? <FaChevronRight /> : <FaChevronLeft />}
               </button>
+
               <div>
                 <div className="swiper-pagination-dots flex justify-center w-[10px] gap-[12px]"></div>
               </div>
+
               <button className="swiper-button-next-custom flex justify-center items-center border border-[#313131] text-[#C99769] text-[20px] rounded-[8px] w-[52px] h-[52px]">
-                <FaChevronRight />
+                {isRTL ? <FaChevronLeft /> : <FaChevronRight />}
               </button>
             </div>
           </div>
