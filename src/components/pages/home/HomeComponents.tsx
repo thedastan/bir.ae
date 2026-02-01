@@ -7,7 +7,7 @@ import Ourclients from "./our_clients/Our_clients";
 import Contact from "./contact/Contact";
 import Projects from "./projects/Projects";
 import Map from "./map/Map";
-import Sliderprojects from "./slider_projects/Sliderprojects";
+// import Sliderprojects from "./slider_projects/Sliderprojects";
 import Impact from "./impact/Impact";
 
 import "aos/dist/aos.css";
@@ -32,7 +32,7 @@ const HomeComponents = () => {
       <Map />
       <MapMabile />
       <Ourclients />
-      <Sliderprojects />
+      {/* <Sliderprojects /> */}
       <Contact />
     </>
   );

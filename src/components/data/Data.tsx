@@ -19,7 +19,7 @@ import logo18 from "@/assets/logo_images/logo_image18.png";
 import logo19 from "@/assets/logo_images/logo_image19.svg";
 import logo20 from "@/assets/logo_images/logo_image20.png";
 import logo21 from "@/assets/logo_images/logo_image21.webp";
-import logo22 from "@/assets/images/logo_project1.png";
+// import logo22 from "@/assets/images/logo_project1.png";
 
 import img1 from "@/assets/projects_images/project_image1.png";
 import img2 from "@/assets/projects_images/project_image2.png";
@@ -42,7 +42,7 @@ import img18 from "@/assets/projects_images/project_image18.png";
 import img19 from "@/assets/projects_images/project_image19.png";
 import img20 from "@/assets/projects_images/project_image20.png";
 import img21 from "@/assets/projects_images/project_image21.png";
-import img22 from "@/assets/projects_images/project_image22.png";
+// import img22 from "@/assets/projects_images/project_image22.png";
 
 import { useTranslations } from "next-intl";
 
@@ -218,13 +218,13 @@ export default function Data() {
       description: t("card_description21"),
       link: "https://bellonaservice.kg",
     },
-    {
-      id: 22,
-      logo: logo22,
-      img: img22,
-      title: t("card_title22"),
-      description: t("card_description22"),
-      link: "https://uborka-chistka.kg",
-    },
+    // {
+    //   id: 22,
+    //   logo: logo22,
+    //   img: img22,
+    //   title: t("card_title22"),
+    //   description: t("card_description22"),
+    //   link: "https://uborka-chistka.kg",
+    // },
   ];
 }
