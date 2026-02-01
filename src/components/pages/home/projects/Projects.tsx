@@ -8,7 +8,6 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { Description } from "@/components/ui/text/Description";
 import { TitleComponent } from "@/components/ui/text/TitleComponent";
 import { Title } from "@/components/ui/text/Title";
-import Button from "@/components/ui/button/Button";
 import LinkButton from "@/components/ui/button/LinkButton";
 
 import light from "@/assets/images/light3.png";
@@ -54,12 +53,14 @@ const Projects = () => {
                 backgroundRepeat: "no-repeat",
               }}
             >
-              <div className="w-full h-full transition-opacity duration-500 md:opacity-0 group-hover:opacity-100">
+              <div className="relative w-full h-full transition-opacity duration-500 md:opacity-0 group-hover:opacity-100">
                 <Image
                   src={el.img}
                   alt="project image"
                   className="w-full h-full object-cover"
                 />
+
+                <div className="absolute inset-0 bg-black/40" />
               </div>
 
               <div className="flex flex-col justify-between w-full h-full absolute md:p-[30px] p-[20px]">

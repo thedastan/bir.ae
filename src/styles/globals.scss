@@ -91,3 +91,19 @@ body {
   color: white !important;
   width: 260px;
 }
+
+.my-phone-input {
+  background: black !important;
+  border: 1px solid rgb(71, 71, 71) !important;
+  color: white !important;
+  border-radius: 40px !important;
+  width: 300px !important;
+  height: 64px !important;
+  border: 1px solid #313131;
+
+  input {
+    color: white !important;
+    border-left: 1px solid rgb(0, 0, 0) !important;
+    font-family: var(--font-montserrat), Inter, sans-serif !important;
+  }
+}

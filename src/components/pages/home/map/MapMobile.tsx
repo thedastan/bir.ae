@@ -24,7 +24,7 @@ const MapMabile = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className=" relative pt-[100px] overflow-hidden w-full h-[350px] md:hidden flex justify-center items-center"
+      className=" relative pt-[100px] mt-[200px] overflow-hidden w-full h-[350px] md:hidden flex justify-center items-center"
     >
       <Image className="" src={map} alt="img" />
       <div className=" z-10 absolute overflow-hidden   w-full h-[300px] flex justify-center items-center">

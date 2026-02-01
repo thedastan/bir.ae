@@ -15,6 +15,10 @@ import axios from "axios";
 import { toast } from "alert-go";
 import "alert-go/dist/notifier.css";
 
+import { useState } from "react";
+import PhoneInput from "phone-go";
+import "phone-go/dist/phone-go.css";
+
 interface IFormTelegram {
   name: string;
   phone: number;
@@ -25,6 +29,7 @@ const Contact = () => {
   const t = useTranslations("contact");
   const locale = useLocale();
   const isArabic = locale === "ar";
+  const [phone, setPhone] = useState("");
 
   const { register, handleSubmit, reset } = useForm<IFormTelegram>();
 
@@ -42,7 +47,7 @@ const Contact = () => {
         chat_id: -1003456520848,
         parse_mode: "html",
         text: messageModel(data),
-      }
+      },
     );
     reset();
     toast.success(t("success"), {
@@ -76,7 +81,7 @@ const Contact = () => {
       {/* Text + form (RTL only here) */}
       <div
         className="flex flex-col items-center gap-[40px] absolute z-10"
-        dir={isArabic ? "rtl" : "ltr"}
+        // dir={isArabic ? "rtl" : "ltr"}
       >
         <TitleComponent
           className={`text-white ${isArabic ? "text-right" : "text-center"}`}
@@ -98,24 +103,25 @@ const Contact = () => {
             `}
           />
 
-          <input
+          <PhoneInput
             {...register("phone", { required: true })}
-            type="text"
+            className="my-phone-input"
+            value={phone}
+            onChange={setPhone}
+            defaultCountry="KG"
             placeholder={t("phone")}
-            className={`border-[0.1px] border-[#313131] w-[300px] h-[64px]
-              rounded-[40px] bg-[#000000] p-[15px] text-white outline-none text-[16px]
-              ${isArabic ? "text-right placeholder:text-right" : "text-left"}
-            `}
           />
 
-          <textarea
-            {...register("message", { required: true })}
-            placeholder={t("message")}
-            className={`w-[300px] h-[80px] bg-black rounded-[24px] outline-none p-[15px]
+          <div className="" dir={isArabic ? "rtl" : "ltr"}>
+            <textarea
+              {...register("message", { required: true })}
+              placeholder={t("message")}
+              className={`w-[300px] h-[80px] bg-black rounded-[24px] outline-none p-[15px]
               text-white border-[0.1px] border-[#313131]
               ${isArabic ? "text-right placeholder:text-right" : "text-left"}
             `}
-          />
+            />
+          </div>
 
           <button
             type="submit"
