@@ -1,11 +1,11 @@
 export const IS_CLIENT = typeof window !== "undefined";
 export const IS_PRODUCTION = process.env.NODE_ENV === "production";
 
-export const PHONE_NUMBER = "996559692626";
+export const PHONE_NUMBER = "971545272111";
 export const WHATSAPP_NUMBER = PHONE_NUMBER;
 
 export const EMAIL_ADDRESS = "birdigital@gmail.com";
-export const INSTAGRAM = "dastan.mukeev";
+export const INSTAGRAM = "1digital.ae";
 export const TELEGRAM = "@dastan_mukeev";
 
 /// links/

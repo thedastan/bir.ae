@@ -60,11 +60,11 @@ export const generateMetadata = ({
 export const generateStructuredData = () => ({
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "B1R digital",
-  url: "https://birae.vercel.app/",
+  name: "B1R Digital",
+  url: "https://bir.ae/",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://birae.vercel.app/search?q={search_term_string}",
+    target: "https://bir.ae/search?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 });

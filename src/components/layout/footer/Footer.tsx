@@ -78,7 +78,7 @@ const Footer = () => {
           <div className="w-full flex text-start mt-[20px]">
             <Description className="text-[#FFFFFF]">
               <Link target="_blank" href={INSTAGRAM_LINK}>
-                © {currentYear} B1R DIGITAL
+                © 2021 - {currentYear} B1R DIGITAL
               </Link>
             </Description>
           </div>

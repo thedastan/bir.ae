@@ -23,6 +23,16 @@ const Whatwedo = () => {
       description: t("seo_google_descrioption"),
       img: img3,
     },
+    {
+      title: t("chatbot"),
+      description: t("chatbot_desc"),
+      img: img,
+    },
+    {
+      title: t("ai"),
+      description: t("ai_desc"),
+      img: img2,
+    },
   ];
 
   return (
