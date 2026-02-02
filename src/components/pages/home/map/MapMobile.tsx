@@ -106,7 +106,7 @@ const MapMabile = () => {
           </Description>
         </div>
 
-        <div className="mb-[50px] ml-[250px] absolute flex flex-col items-center gap-[4px] group">
+        <div className="mb-[40px] ml-[250px] absolute flex flex-col items-center gap-[4px] group">
           <Image
             width={20}
             height={20}
@@ -134,13 +134,103 @@ const MapMabile = () => {
       </div>
 
       <div className="z-0 absolute overflow-hidden w-full h-[300px] flex justify-center items-center">
-        <div className="w-[25px] mb-[70px] ml-[20px] h-[1px] rotate-[30deg] border-t border-dashed absolute z-20" />
-        <div className="w-[50px] mb-[100px] ml-[20px] h-[1px] rotate-[45deg] border-t border-dashed absolute z-20" />
-        <div className="w-[50px] mb-[100px] ml-[70px] h-[1px] rotate-[100deg] border-t border-dashed absolute z-20" />
-        <div className="w-[50px] mb-[90px] ml-[110px] h-[1px] rotate-[150deg] border-t border-dashed absolute z-20" />
-        <div className="w-[70px] mb-[65px] ml-[110px] h-[1px] rotate-[170deg] border-t border-dashed absolute z-20" />
-        <div className="w-[90px] mb-[55px] ml-[160px] h-[1px] rotate-[178deg] border-t border-dashed absolute z-20" />
-        <div className="w-[170px] mb-[65px] -ml-[130px] h-[1px] -rotate-[175deg] border-t border-dashed absolute z-20" />
+        <svg
+          width="25"
+          height="14"
+          className="absolute z-20 mb-[70px] ml-[20px] rotate-[40deg]"
+        >
+          <path
+            d="M0 10 Q12.5 0 25 1"
+            fill="none"
+            stroke="white"
+            strokeWidth="1"
+            strokeDasharray="3 3"
+          />
+        </svg>
+
+        <svg
+          width="50"
+          height="20"
+          className="absolute z-20 mb-[100px] ml-[20px] rotate-[45deg]"
+        >
+          <path
+            d="M0 14 Q25 0 50 14"
+            fill="none"
+            stroke="white"
+            strokeWidth="1"
+            strokeDasharray="4 4"
+          />
+        </svg>
+
+        <svg
+          width="50"
+          height="20"
+          className="absolute z-20 mb-[100px] ml-[70px] rotate-[280deg]"
+        >
+          <path
+            d="M0 14 Q25 0 50 14"
+            fill="none"
+            stroke="white"
+            strokeWidth="1"
+            strokeDasharray="4 4"
+          />
+        </svg>
+
+        <svg
+          width="50"
+          height="20"
+          className="absolute z-20 mb-[90px] ml-[110px] rotate-[330deg]"
+        >
+          <path
+            d="M0 14 Q25 0 50 14"
+            fill="none"
+            stroke="white"
+            strokeWidth="1"
+            strokeDasharray="4 4"
+          />
+        </svg>
+
+        <svg
+          width="70"
+          height="24"
+          className="absolute z-20 mb-[65px] ml-[130px] rotate-[350deg]"
+        >
+          <path
+            d="M0 18 Q35 0 70 15"
+            fill="none"
+            stroke="white"
+            strokeWidth="1"
+            strokeDasharray="4 4"
+          />
+        </svg>
+
+        <svg
+          width="90"
+          height="30"
+          className="absolute z-20 mb-[55px] ml-[160px] rotate-[178deg]"
+        >
+          <path
+            d="M0 8 Q45 28 90 10"
+            fill="none"
+            stroke="white"
+            strokeWidth="1"
+            strokeDasharray="4 4"
+          />
+        </svg>
+
+        <svg
+          width="170"
+          height="40"
+          className="absolute z-20 mb-[85px] -ml-[130px] -rotate-[175deg]"
+        >
+          <path
+            d="M0 10 Q85 40 170 10"
+            fill="none"
+            stroke="white"
+            strokeWidth="1"
+            strokeDasharray="4 4"
+          />
+        </svg>
       </div>
     </section>
   );

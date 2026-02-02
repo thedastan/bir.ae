@@ -29,26 +29,18 @@ const Footer = () => {
         >
           <Description className="text-[#FFFFFF]">{t("title")}</Description>
         </div>
-        <div className="flex flex-wrap justify-between text-[#FFFFFF] mt-[20px]">
+        <div className="flex flex-col md:flex-row gap-4 justify-between text-[#FFFFFF] mt-[20px]">
           <Link
             href={EMAIL_ADDRESS_LINK}
-            className="flex items-center gap-1 text-[38px] hover:text-[#C99769]"
+            className="flex items-center gap-1 text-[26px] md:text-[38px] hover:text-[#C99769]"
           >
-            {/* Десктоп */}
-            <span className="hidden md:inline">{EMAIL_ADDRESS}</span>
-
-            {/* Мобильная версия */}
-            <span className="inline md:hidden">birdigital@gmail...</span>
-
-            {/* Иконка только на десктопе */}
-            <span className="hidden md:inline">
-              <GoArrowUpRight />
-            </span>
+            {EMAIL_ADDRESS}
+            <GoArrowUpRight />
           </Link>
 
           <Link
             target="_blank"
-            className="flex items-center gap-1 text-[38px] hover:text-[#C99769]"
+            className="flex items-center gap-1 text-[26px] md:text-[38px] hover:text-[#C99769]"
             href={WHATSAPP_LINK}
           >
             Whatsapp
@@ -57,7 +49,7 @@ const Footer = () => {
 
           <Link
             target="_blank"
-            className="flex items-center gap-1 text-[38px] hover:text-[#C99769]"
+            className="flex items-center gap-1 text-[26px] md:text-[38px] hover:text-[#C99769]"
             href={INSTAGRAM_LINK}
           >
             instagram
@@ -66,7 +58,7 @@ const Footer = () => {
 
           <Link
             target="_blank"
-            className="flex items-center gap-1 text-[38px] hover:text-[#C99769]"
+            className="flex items-center gap-1 text-[26px] md:text-[38px] hover:text-[#C99769]"
             href={TELEGRAM_LINK}
           >
             telegram

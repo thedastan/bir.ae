@@ -5,7 +5,7 @@ import logo1 from "@/assets/logo_images/logo_image1.png";
 import logo2 from "@/assets/logo_images/logo_image2.png";
 import logo3 from "@/assets/logo_images/logo_image3.png";
 import logo4 from "@/assets/logo_images/logo_image4.png";
-import logo5 from "@/assets/logo_images/logo_image5.png";
+import logo5 from "@/assets/logo_images/logo_image5.webp";
 import logo6 from "@/assets/logo_images/logo_image6.webp";
 import logo7 from "@/assets/logo_images/logo_image7.webp";
 import logo8 from "@/assets/logo_images/logo_image8.png";
@@ -35,66 +35,70 @@ const Ourclients = () => {
           </TitleComponent>
 
           <div className="md:w-[85%] w-full grid grid-cols-2 md:grid-cols-4 border-[#75757571]">
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-end justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex items-center justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image className="filter grayscale" src={logo1} alt="img" />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-end justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex   items-center   justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image className="filter grayscale" src={logo2} alt="img" />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-end justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex   items-center  justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image className="filter grayscale" src={logo3} alt="img" />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-end justify-center p-5 border-b-[2px] border-[#75757571]">
+            <div className="w-full h-[100px] flex   items-center   justify-center p-5 border-b-[2px] border-[#75757571]">
               <Image className="filter grayscale" src={logo4} alt="img" />
             </div>
           </div>
 
           <div className="md:w-[85%] w-full grid grid-cols-2 md:grid-cols-4 border-[#75757571]">
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-start justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
-              <Image className="filter grayscale" src={logo5} alt="img" />
+            <div className="w-full h-[100px] flex items-center justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+              <Image
+                className="w-[50px] filter grayscale"
+                src={logo5}
+                alt="img"
+              />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-start justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex items-center justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image
                 className="w-[150px] filter grayscale"
                 src={logo6}
                 alt="img"
               />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-start justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex items-center justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image
                 className="w-[110px] filter grayscale"
                 src={logo7}
                 alt="img"
               />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-start justify-center p-5 border-b-[2px] border-[#75757571]">
+            <div className="w-full h-[100px] flex items-center justify-center p-5 border-b-[2px] border-[#75757571]">
               <Image className="filter grayscale" src={logo8} alt="img" />
             </div>
           </div>
 
           <div className="md:w-[85%] w-full grid grid-cols-2 md:grid-cols-4 border-[#75757571]">
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-end justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex items-center justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image
                 className="w-[60px] filter grayscale"
                 src={logo9}
                 alt="img"
               />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-end justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex items-center justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image
                 className="w-[60px] filter grayscale"
                 src={logo10}
                 alt="img"
               />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-end justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex items-center justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image
                 className="w-[150px] filter grayscale"
                 src={logo11}
                 alt="img"
               />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-end justify-center p-5 border-b-[2px] border-[#75757571]">
+            <div className="w-full h-[100px] flex items-center justify-center p-5 border-b-[2px] border-[#75757571]">
               <Image
                 className="w-[150px] filter grayscale"
                 src={logo12}
@@ -104,28 +108,28 @@ const Ourclients = () => {
           </div>
 
           <div className="md:w-[85%] w-full grid grid-cols-2 md:grid-cols-4 border-[#75757571]">
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-start justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex items-center justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image
                 className="w-[60px] filter grayscale"
                 src={logo13}
                 alt="img"
               />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-start justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex items-center justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image
                 className="w-[110px] filter grayscale"
                 src={logo14}
                 alt="img"
               />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-start justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex items-center justify-center p-5 border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image
                 className="w-[80px] filter grayscale"
                 src={logo15}
                 alt="img"
               />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-start justify-center p-5 border-b-[2px] border-[#75757571]">
+            <div className="w-full h-[100px] flex items-center justify-center p-5 border-b-[2px] border-[#75757571]">
               <Image
                 className="w-[80px] filter grayscale"
                 src={logo16}
@@ -135,28 +139,28 @@ const Ourclients = () => {
           </div>
 
           <div className="md:w-[85%] w-full grid grid-cols-2 md:grid-cols-4 border-[#75757571]">
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-end justify-center p-5 md:border-b-[0px] border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex  items-center justify-center p-5 md:border-b-[0px] border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image
                 className="w-[110px] filter grayscale"
                 src={logo17}
                 alt="img"
               />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-end justify-center p-5 md:border-b-[0px] border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex  items-center justify-center p-5 md:border-b-[0px] border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image
                 className="w-[110px] filter grayscale"
                 src={logo18}
                 alt="img"
               />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-end justify-center p-5 md:border-b-[0px] border-b-[0px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex   items-center justify-center p-5 md:border-b-[0px] border-b-[0px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image
                 className="w-[50px] filter grayscale"
                 src={logo19}
                 alt="img"
               />
             </div>
-            <div className="w-full h-[100px] flex md:items-start items-center md:justify-end justify-center p-5 md:border-b-[0px] border-b-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex   items-center   justify-center p-5 md:border-b-[0px] border-b-[0px] border-[#75757571]">
               <Image
                 className="w-[50px] filter grayscale"
                 src={logo20}
