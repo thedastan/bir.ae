@@ -4,9 +4,9 @@ export const IS_PRODUCTION = process.env.NODE_ENV === "production";
 export const PHONE_NUMBER = "971545272111";
 export const WHATSAPP_NUMBER = PHONE_NUMBER;
 
-export const EMAIL_ADDRESS = "birdigital@gmail.com";
-export const INSTAGRAM = "1digital.ae";
-export const TELEGRAM = "@dastan_mukeev";
+export const EMAIL_ADDRESS = "birgroup.kg@gmail.com";
+export const INSTAGRAM = "birdigital.ae";
+export const TELEGRAM = "dastan_mukeev";
 
 /// links/
 
