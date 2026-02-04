@@ -135,7 +135,7 @@ const Contact = () => {
             className="my-phone-input"
             value={phone}
             onChange={setPhone}
-            defaultCountry="SA"
+            defaultCountry="AE"
             placeholder={t("phone")}
           />
 
