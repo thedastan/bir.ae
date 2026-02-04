@@ -75,20 +75,22 @@ body {
 
 /* Стили для точек пагинации */
 .swiper-pagination-bullet {
-  background-color: #adadad !important; /* серый цвет */
+  background-color: #adadad !important;
   opacity: 0.6;
   transition: all 0.3s ease;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #ffffff !important; /* активная — твой акцентный цвет */
+  background-color: #ffffff !important;
   opacity: 1;
-  width: 16px; /* опционально: сделать активную точку шире */
+  width: 16px;
 }
 
 .notify.success {
   background: #2ecc71 !important;
   color: white !important;
+  display: flex !important;
+  text-align: center !important;
   width: 260px;
 }
 

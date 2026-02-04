@@ -40,20 +40,47 @@ const Contact = () => {
     return messageTG;
   };
 
+  // const onSubmit: SubmitHandler<IFormTelegram> = async (data) => {
+  //   await axios.post(
+  //     `https://api.telegram.org/bot${"8350716333:AAGQgwqOvcm5cuo_8lIIuj_mkDbxZiAmo1s"}/sendMessage`,
+  //     {
+  //       chat_id: -1003456520848,
+  //       parse_mode: "html",
+  //       text: messageModel(data),
+  //     },
+  //   );
+  //   reset();
+  //   toast.success(t("success"), {
+  //     position: "top-center",
+  //     duration: 3000,
+  //   });
+  // };
+
   const onSubmit: SubmitHandler<IFormTelegram> = async (data) => {
-    await axios.post(
-      `https://api.telegram.org/bot${"8350716333:AAGQgwqOvcm5cuo_8lIIuj_mkDbxZiAmo1s"}/sendMessage`,
-      {
-        chat_id: -1003456520848,
-        parse_mode: "html",
-        text: messageModel(data),
-      },
-    );
-    reset();
-    toast.success(t("success"), {
-      position: "top-center",
-      duration: 3000,
-    });
+    try {
+      // Подставляем актуальный номер телефона из стейта
+      const fullData = { ...data, phone: phone };
+
+      await axios.post(
+        `https://api.telegram.org/bot${"8350716333:AAGQgwqOvcm5cuo_8lIIuj_mkDbxZiAmo1s"}/sendMessage`,
+        {
+          chat_id: -1003456520848,
+          parse_mode: "html",
+          text: messageModel(fullData as any), // Используем дополненные данные
+        },
+      );
+
+      reset();
+      setPhone("+966"); // Сбрасываем телефон к коду Аравии после отправки
+
+      toast.success(t("success"), {
+        position: "top-center",
+        duration: 3000,
+      });
+    } catch (error) {
+      console.error("Ошибка при отправке:", error);
+      toast.error("Error sending message");
+    }
   };
 
   return (
@@ -104,11 +131,11 @@ const Contact = () => {
           />
 
           <PhoneInput
-            {...register("phone", { required: true })}
+            // {...register("phone", { required: true })}
             className="my-phone-input"
             value={phone}
             onChange={setPhone}
-            defaultCountry="KG"
+            defaultCountry="SA"
             placeholder={t("phone")}
           />
 
