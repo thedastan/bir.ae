@@ -19,6 +19,8 @@ import logo18 from "@/assets/logo_images/logo_image18.png";
 import logo19 from "@/assets/logo_images/logo_image19.svg";
 import logo20 from "@/assets/logo_images/logo_image20.png";
 import logo21 from "@/assets/logo_images/logo_image21.webp";
+import logo23 from "@/assets/logo_images/logo_image21.png";
+import logo24 from "@/assets/logo_images/logo_image24.png";
 // import logo22 from "@/assets/images/logo_project1.png";
 
 import img1 from "@/assets/projects_images/project_image1.png";
@@ -42,7 +44,8 @@ import img18 from "@/assets/projects_images/project_image18.png";
 import img19 from "@/assets/projects_images/project_image19.png";
 import img20 from "@/assets/projects_images/project_image20.png";
 import img21 from "@/assets/projects_images/project_image21.png";
-// import img22 from "@/assets/projects_images/project_image22.png";
+import img23 from "@/assets/projects_images/project_image23.png";
+import img24 from "@/assets/projects_images/project_image24.png";
 
 import { useTranslations } from "next-intl";
 
@@ -218,13 +221,21 @@ export default function Data() {
       description: t("card_description21"),
       link: "https://bellonaservice.kg",
     },
-    // {
-    //   id: 22,
-    //   logo: logo22,
-    //   img: img22,
-    //   title: t("card_title22"),
-    //   description: t("card_description22"),
-    //   link: "https://uborka-chistka.kg",
-    // },
+    {
+      id: 22,
+      logo: logo23,
+      img: img23,
+      title: t("card_title23"),
+      description: t("card_description23"),
+      link: "https://www.flowerburo.kg/",
+    },
+    {
+      id: 23,
+      logo: logo24,
+      img: img24,
+      title: t("card_title24"),
+      description: t("card_description24"),
+      link: "https://www.medicalswitzerland.ch/club?lang=en",
+    },
   ];
 }

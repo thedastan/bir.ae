@@ -33,6 +33,8 @@
     "card_title20": "Temir (UAE)",
     "card_title21": "Bellona Service",
     "card_title22": "Uborka Chistka",
+    "card_title23": "Flower buro",
+    "card_title24": "medicalswitzerland",
 
     "card_description1": "Online auto parts platform with requests, seller offers, catalog, and mobile apps",
     "card_description2": "Website of an international real estate agency focused on investment, buying, and renting properties worldwide.",
@@ -55,7 +57,9 @@
     "card_description19": "Corporate website of an international holding in trade, investment, and industry.",
     "card_description20": "Temir — smart NFC business card platform for quick contact exchange.",
     "card_description21": "Website of a service company for moving and furniture cleaning with request form.",
-    "card_description22": "Landing page of a cleaning company with online service request."
+    "card_description22": "Landing page of a cleaning company with online service request.",
+    "card_description23": "Online flower shop with bouquet ordering and delivery.",
+    "card_description24": "With the MedicalSwitzerland HealthCard (patent pending), you can store important medical reports."
   },
   "What": {
     "title": "How we help businesses grow",

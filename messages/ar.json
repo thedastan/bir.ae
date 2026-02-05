@@ -33,6 +33,8 @@
     "card_title20": "Temir (UAE)",
     "card_title21": "Bellona Service",
     "card_title22": "Uborka Chistka",
+    "card_title23": "Flower buro",
+    "card_title24": "medicalswitzerland",
 
     "card_description1": "منصة قطع غيار السيارات عبر الإنترنت مع الطلبات وعروض البائعين والكatalog وتطبيقات الهاتف المحمول",
     "card_description2": "موقع وكالة عقارات دولية يركز على الاستثمار وشراء وتأجير العقارات في جميع أنحاء العالم.",
@@ -55,7 +57,9 @@
     "card_description19": "موقع الشركة القابضة الدولية في مجالات التجارة والاستثمار والصناعة.",
     "card_description20": "Temir — منصة بطاقة NFC ذكية لتبادل جهات الاتصال بسرعة.",
     "card_description21": "موقع شركة خدمات للانتقال وتنظيف الأثاث مع نموذج طلب.",
-    "card_description22": "صفحة هبوط لشركة تنظيف مع طلب خدمة عبر الإنترنت."
+    "card_description22": "صفحة هبوط لشركة تنظيف مع طلب خدمة عبر الإنترنت.",
+    "card_description23": "متجر زهور عبر الإنترنت مع إمكانية طلب الباقات والتوصيل.",
+    "card_description24": "باستخدام بطاقة MedicalSwitzerland HealthCard (براءة اختراع قيد التسجيل)، يمكنك حفظ التقارير الطبية المهمة."
   },
   "What": {
     "title": "كيف نساعد الأعمال على النمو",
