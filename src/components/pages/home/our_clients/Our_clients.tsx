@@ -21,6 +21,7 @@ import logo17 from "@/assets/logo_images/logo_image17.webp";
 import logo18 from "@/assets/logo_images/logo_image18.png";
 import logo19 from "@/assets/logo_images/logo_image19.svg";
 import logo20 from "@/assets/logo_images/logo_image20.png";
+import logo21 from "@/assets/logo_images/logo_image21.png";
 
 import { useTranslations } from "next-intl";
 const Ourclients = () => {
@@ -139,34 +140,53 @@ const Ourclients = () => {
           </div>
 
           <div className="md:w-[85%] w-full grid grid-cols-2 md:grid-cols-4 border-[#75757571]">
-            <div className="w-full h-[100px] flex  items-center justify-center p-5 md:border-b-[0px] border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex  items-center justify-center p-5  border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image
                 className="w-[110px] filter grayscale"
                 src={logo17}
                 alt="img"
               />
             </div>
-            <div className="w-full h-[100px] flex  items-center justify-center p-5 md:border-b-[0px] border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex  items-center justify-center p-5   border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image
                 className="w-[110px] filter grayscale"
                 src={logo18}
                 alt="img"
               />
             </div>
-            <div className="w-full h-[100px] flex   items-center justify-center p-5 md:border-b-[0px] border-b-[0px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex   items-center justify-center p-5   border-b-[2px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
               <Image
                 className="w-[50px] filter grayscale"
                 src={logo19}
                 alt="img"
               />
             </div>
-            <div className="w-full h-[100px] flex   items-center   justify-center p-5 md:border-b-[0px] border-b-[0px] border-[#75757571]">
+            <div className="w-full h-[100px] flex   items-center   justify-center p-5 border-b-[2px] border-[#75757571]">
               <Image
                 className="w-[50px] filter grayscale"
                 src={logo20}
                 alt="img"
               />
             </div>
+          </div>
+
+          <div className="md:w-[85%] w-full grid grid-cols-2 md:grid-cols-4 justify-center border-[#75757571]">
+            <div className="w-full h-[100px] md:flex hidden items-center justify-center p-5 md:border-r-[2px] border-r-[0px] border-[#75757571]"></div>
+
+            <div className="w-full h-[100px] flex items-center justify-center p-5 border-[#75757571] md:border-r-[2px]">
+              <Image
+                className="w-[110px] filter grayscale"
+                src={logo21}
+                alt="img"
+              />
+            </div>
+            <div className="w-full h-[100px] flex items-center justify-center p-5 md:border-l-[0px] md:border-r-[2px] border-r-[0px] border-[#75757571]">
+              <h2 className="flex items-center md:text-[22px] text-[16px] text-white font-[600]">
+                <span className="text-[#2c2c2c]">medical</span>switzerland
+              </h2>
+            </div>
+
+            <div className="w-full h-[100px] md:flex hidden items-center justify-center p-5 border-[#75757571]"></div>
           </div>
         </div>
       </div>
